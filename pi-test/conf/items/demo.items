@@ -9,7 +9,7 @@ Group Status 	(All)
 
 Group GF_Living 	"Living Room" 	<video> 	(gGF)
 Group GF_Kitchen 	"Kitchen" 		<kitchen> 	(gGF)
-Group GF_Toilet 	"Toilet" 		<bath> 		(gGF)
+Group GF_Toilet 	"Toilet Demo" 		<bath> 		(gGF)
 Group GF_Corridor 	"Corridor" 		<corridor> 	(gGF)
 
 Group FF_Bath 		"Bathroom" 		<bath> 		(gFF)
