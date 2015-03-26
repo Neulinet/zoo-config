@@ -5,29 +5,17 @@ when
 then
 	var Number consumptionDelta = Fridge_kWh.state - previousState
 	postUpdate(Fridge_kWh_week, Fridge_kWh_week.state + (consumptionDelta as DecimalType))
-	logInfo("Fridge kWh increased by " consumptionDelta)
+	logInfo("Fridge kWh increased by " + consumptionDelta)
 end
 
 
-rule "DevSetup: Initialize all kWh"
-when 
-		System started
-then
-		gZooPower?.members.forEach(consumer|
-			postUpdate(consumer, 1.0 + ((Math::random * 50.0).intValue) )
-		)
-		gZooPowerChart?.members.forEach(consumer|
-			postUpdate(consumer, 1.0 + ((Math::random * 50.0).intValue) )
-		)
-end
-
-rule "DevSetup: Increase value .1 per minute"
+/*rule "DevSetup: Increase value .1 per minute"
 when 
 		Time cron "0 * * * * ?"
 then
 		gZooPower?.members.forEach(consumer|
 			logInfo("test")
-			//postUpdate(consumer, 1 + (consumer.state as DecimalType))
+			postUpdate(consumer, 1 + (consumer.state as DecimalType))
 		}
-end
+end*/
 
