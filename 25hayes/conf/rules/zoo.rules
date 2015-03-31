@@ -1,0 +1,21 @@
+
+rule "Fridge Power sum"
+when
+	Item Fridge_kWh changed
+then
+	var Number consumptionDelta = Fridge_kWh.state - previousState
+	postUpdate(Fridge_kWh_week, Fridge_kWh_week.state + (consumptionDelta as DecimalType))
+	logInfo("Fridge kWh increased by " + consumptionDelta)
+end
+
+
+/*rule "DevSetup: Increase value .1 per minute"
+when 
+		Time cron "0 * * * * ?"
+then
+		gZooPower?.members.forEach(consumer|
+			logInfo("test")
+			postUpdate(consumer, 1 + (consumer.state as DecimalType))
+		}
+end*/
+
