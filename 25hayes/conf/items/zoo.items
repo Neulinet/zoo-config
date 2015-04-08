@@ -10,25 +10,16 @@ DateTime billPeriod_start
 DateTime billPeriod_end
 
 
-// Rooms
+// Rooms and Master Switches
 
-Group gStudio 	"Studio" 	(gRooms) [ "home-group", "room" ]
-Group gOffice 	"Office" 	(gRooms) [ "home-group", "room" ]
-Group gRalph 	"Ralph" 	(gRooms) [ "home-group", "room" ]
-Group gEntry 	"Entry" 	(gRooms) [ "home-group", "room" ]
-Group gCellar 	"Cellar" 	(gRooms) [ "home-group", "room" ]
-Group gBath 	"Bathroom" 	(gRooms) [ "home-group", "room" ]
-Group gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room" ]
+Group:Switch:OR(ON, OFF) gStudio 	"Studio" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gOffice 	"Office" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gRalph 	"Ralph" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gEntry 	"Entry" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gCellar 	"Cellar" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
 
-// Master Switches
-
-Group:Switch:OR(ON, OFF) master_studio 	"Master Switch" (gStudio) [ "master" ]
-Group:Switch:OR(ON, OFF) master_office 	"Master Switch" (gOffice) [ "master" ]
-Group:Switch:OR(ON, OFF) master_ralph 	"Master Switch" (gRalph) [ "master" ]
-Group:Switch:OR(ON, OFF) master_entry 	"Master Switch" (gEntry) [ "master" ]
-Group:Switch:OR(ON, OFF) master_cellar 	"Master Switch" (gCellar) [ "master" ]
-Group:Switch:OR(ON, OFF) master_bath 	"Master Switch" (gBath) [ "master" ]
-Group:Switch:OR(ON, OFF) master_laundry "Master Switch" (gLaundry) [ "master" ]
 
 // Lights
 
