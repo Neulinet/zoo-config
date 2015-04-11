@@ -32,7 +32,8 @@ Group:Switch:OR(ON, OFF) master_laundry "Master Switch" (gLaundry) [ "master" ]
 
 // Lights
 
-Dimmer light_studio_front "Front" 	(gStudio) 	[ "light" ]
+Dimmer light_studio_front "Front" 	(gStudio) 	[ "light" ] 
+
 Dimmer light_studio_back "Back" 	(gStudio) 	[ "light" ]
 
 Dimmer light_ralph_bed "Bed"	 	(gRalph) 	[ "light" ]
