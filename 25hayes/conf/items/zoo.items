@@ -28,7 +28,7 @@ Dimmer light_studio_back "Back" 	(gStudio) 	 [ "light" ]
 
 Dimmer light_ralph_bed "Bed"	 	(gRalph) 	 [ "light" ] { channel="mox:1_gang_dimmer:209:state" }
 
-Dimmer light_office "Office"	 	(gOffice) 	 [ "light" ] { channel="mox:1_gang_dimmer:208:state" }
+Dimmer light_office "Office"	 	(gOffice) 	 [ "light" ] { channel="mox:1_gang_dimmer:235:state" }
 
 Dimmer light_entry "Entry"	 		(gEntry) 	 [ "light" ] { channel="mox:1_gang_dimmer:205:state" }
 
@@ -78,7 +78,7 @@ Number consum_light_studio_back "Back" 		(gConsumStudio, gStudio) [ "consumption
 
 Number consum_light_ralph_bed "Bed"	 		(gConsumRalph, gRalph) 	[ "consumption" ] { channel="mox:1_gang_dimmer:209:activeEnergy" }
 
-Number consum_light_office "Office"	 		(gConsumOffice, gOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:208:activeEnergy" }
+Number consum_light_office "Office"	 		(gConsumOffice, gOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:235:activeEnergy" }
 
 Number consum_light_entry "Entry"	 		(gConsumEntry, gEntry) [ "consumption" ] { channel="mox:1_gang_dimmer:205:activeEnergy" }
 

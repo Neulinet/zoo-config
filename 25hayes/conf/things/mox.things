@@ -3,7 +3,7 @@ mox:gateway:221
 mox:1_gang_dimmer:210	[ oid="210" ]
 mox:1_gang_dimmer:209	[ oid="209" ]
 mox:1_gang_dimmer:206	[ oid="206" ]
-mox:1_gang_dimmer:208	[ oid="208" ]
+mox:1_gang_dimmer:235	[ oid="235" ]
 mox:1_gang_on_off:310	[ oid="310" ]
 mox:1_gang_dimmer:205	[ oid="205" ]
 mox:1_gang_dimmer:246	[ oid="246" ]
