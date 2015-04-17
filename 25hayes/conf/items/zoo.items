@@ -23,8 +23,8 @@ Group:Switch:OR(ON, OFF) gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room", "
 
 // Lights
 
-Dimmer light_studio_front "Front" 	(gStudio) 	 [ "light" ]
-Dimmer light_studio_back "Back" 	(gStudio) 	 [ "light" ]
+Dimmer light_studio_front "Front" 	(gStudio) 	 [ "light" ] { channel="mox:1_gang_dimmer:210:state" }
+Dimmer light_studio_back "Back" 	(gStudio) 	 [ "light" ] { channel="mox:1_gang_dimmer:206:state" }
 
 Dimmer light_ralph_bed "Bed"	 	(gRalph) 	 [ "light" ] { channel="mox:1_gang_dimmer:209:state" }
 
