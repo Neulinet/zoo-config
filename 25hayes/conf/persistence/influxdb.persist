@@ -3,5 +3,5 @@ Strategies {
 }
 
 Items {
-	* : strategy = everyChange, everyMinute, restoreOnStartup
+	gConsumptions* : strategy = everyChange, everyMinute
 }
