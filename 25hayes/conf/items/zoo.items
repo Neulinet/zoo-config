@@ -63,7 +63,7 @@ Switch power_bath_main "Bathroom" (gBath)	[ "power" ] { channel="mox:1_gang_onof
 
 // Consumption
 
-Group:Number:SUM gConsumptions		"Consumption" (gZooPower)
+Group:Number:SUM gConsumptions		"Consumption" (gZooPower) [ "home-group" ]
 Group:Number:SUM gConsumStudio		"Studio"	(gConsumptions)
 Group:Number:SUM gConsumRalph		"Ralph"		(gConsumptions)
 Group:Number:SUM gConsumOffice		"Office"	(gConsumptions)
@@ -73,19 +73,31 @@ Group:Number:SUM gConsumLaundry		"Laundry"	(gConsumptions)
 Group:Number:SUM gConsumBath		"Bath"		(gConsumptions)
 
 
-Number consum_light_studio_front "Front"	(gConsumStudio, gStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:210:activeEnergy" }
-Number consum_light_studio_back "Back" 		(gConsumStudio, gStudio) [ "consumption" ] { channel="mox:1_gang_dimmer:206:activeEnergy" }	
+Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:studio_front:activeEnergy" }
+Number consum_light_studio_back "Back" 		(gConsumStudio) [ "consumption" ] { channel="mox:1_gang_dimmer:studio_back:activeEnergy" }
 
-Number consum_light_ralph_bed "Bed"	 		(gConsumRalph, gRalph) 	[ "consumption" ] { channel="mox:1_gang_dimmer:209:activeEnergy" }
+Number consum_light_ralph_bed "Bed"	 		(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_dimmer:ralph_bed:activeEnergy" }
+Number consum_outlet_ralph_bed1 "Bed Outlet 1"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed1:activeEnergy" }
+Number consum_outlet_ralph_bed1 "Bed Outlet 2"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed2:activeEnergy" }
 
-Number consum_light_office "Office"	 		(gConsumOffice, gOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:235:activeEnergy" }
+Number consum_light_office "Office"	 		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:office:activeEnergy" }
+Number consum_outlet_office1 "Office Outlet 1"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office1:activeEnergy" }
+Number consum_outlet_office2 "Office Outlet 2"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office2:activeEnergy" }
+Number consum_outlet_office3 "Office Outlet 3"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office3:activeEnergy" }
+Number consum_outlet_office4 "Office Outlet 4"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office4:activeEnergy" }
 
-Number consum_light_entry "Entry"	 		(gConsumEntry, gEntry) [ "consumption" ] { channel="mox:1_gang_dimmer:205:activeEnergy" }
+Number consum_light_entry "Entry"	 		(gConsumEntry) [ "consumption" ] { channel="mox:1_gang_dimmer:entry:activeEnergy" }
+Number consum_outlet_entry1 "Entry Outlet 1" (gConsumEntry) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_entry1:activeEnergy" }
+Number consum_outlet_entry2 "Entry Outlet 2" (gConsumEntry) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_entry2:activeEnergy" }
 
-Number consum_light_cellar "Cellar"	 		(gConsumCellar, gCellar) [ "consumption" ] { channel="mox:1_gang_dimmer:246:activeEnergy" }
+Number consum_light_cellar "Cellar"	 		(gConsumCellar) [ "consumption" ] { channel="mox:1_gang_dimmer:cellar:activeEnergy" }
 
-Number consum_light_laundry "Laundry+Fan"	(gConsumLaundry, gLaundry) ["consumption"] { channel="mox:1_gang_onoff:310:activeEnergy" }
+Number consum_light_laundry "Laundry+Fan"	(gConsumLaundry) ["consumption"] { channel="mox:1_gang_onoff:laundry:activeEnergy" }
+Number consum_outlet_laundry1 "Laundry Outlet 1" (gConsumLaundry) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_laundry1:activeEnergy" }
+Number consum_outlet_laundry2 "Laundry Outlet 2" (gConsumLaundry) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_laundry2:activeEnergy" }
 
-Number consum_light_bath_mirror "Mirror"	(gConsumBath, gBath) 	[ "consumption" ] { channel="mox:1_gang_dimmer:152:activeEnergy" }
-Number consum_light_bath_fan "Fan"			(gConsumBath, gBath) 	[ "consumption" ] { channel="mox:1_gang_onoff:105:activeEnergy" }
-Number consum_light_bath "Ceiling"			(gConsumBath, gBath) 	[ "consumption" ] { channel="mox:1_gang_dimmer:245:activeEnergy" }
+Number consum_light_bath_mirror "Mirror"	(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_dimmer:bath_mirror:activeEnergy" }
+Number consum_light_bath_fan "Fan"			(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_onoff:bath_fan:activeEnergy" }
+Number consum_light_bath "Ceiling"			(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_dimmer:bath:activeEnergy" }
+Number consum_outlet_bath "Bath Outlet" 	(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_bathroom1:activeEnergy" }
+
