@@ -40,3 +40,5 @@ mox:1_gang_onoff:ext_entry	[ oid:365 ]
 
 mox:1_gang_dimmer:stairs_2nd	[ oid:243 ]
 
+mox:1_gang_dimmer:west_deck [ oid:242 ]
+
