@@ -18,7 +18,7 @@ mox:1_gang_onoff:laundry		[ oid=310 ]
 
 mox:1_gang_dimmer:cellar		[ oid=246 ]
 
-mox:1_gang_onoff:bath_mirror	[ oid=152 ]
+mox:1_gang_dimmer:bath_mirror	[ oid=152 ]
 mox:1_gang_onoff:bath_fan		[ oid=105 ]
 mox:1_gang_dimmer:bath			[ oid=245 ]
 mox:1_gang_onoff:outlet_bathroom1	[ oid=154 ]
@@ -38,5 +38,5 @@ mox:1_gang_onoff:ext_north1	[ oid:363 ]
 mox:1_gang_onoff:ext_norht2	[ oid:364 ]
 mox:1_gang_onoff:ext_entry	[ oid:365 ]
 
-mox:1_gang_onoff:stairs_2nd	[ oid:243 ]
+mox:1_gang_dimmer:stairs_2nd	[ oid:243 ]
 

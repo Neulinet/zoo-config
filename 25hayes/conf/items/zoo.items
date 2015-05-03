@@ -73,7 +73,7 @@ Group:Number:SUM gConsumEntry		"Entry"		(gConsumptions)
 Group:Number:SUM gConsumCellar		"Cellar"	(gConsumptions)
 Group:Number:SUM gConsumLaundry		"Laundry"	(gConsumptions)
 Group:Number:SUM gConsumBath		"Bath"		(gConsumptions)
-Group:Number:SUM gConsumUpStairs			"Upsatirs"  (gConsumptions)
+Group:Number:SUM gConsumUpStairs			"Upstairs"  (gConsumptions)
 
 
 Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:studio_front:activeEnergy" }
