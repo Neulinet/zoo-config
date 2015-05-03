@@ -19,6 +19,7 @@ Group:Switch:OR(ON, OFF) gEntry 	"Entry" 	(gRooms) [ "home-group", "room", "mast
 Group:Switch:OR(ON, OFF) gCellar 	"Cellar" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gUpStairs 	"UpStairs" 	(gRooms) [ "home-group", "room", "master-switch" ]
 
 
 // Lights
@@ -39,6 +40,7 @@ Switch light_laundry "Laundry+Fan"	(gLaundry) 	 ["light"] { channel="mox:1_gang_
 Dimmer light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath_mirror:state" } 
 Switch light_bath_fan "Fan"			(gBath) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
 Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath:state" } 
+Switch light_stairs_2nd "Stairs"	(gUpStairs ) 	 [ "light" ] { channel="mox:1_gang_onoff:stairs_2nd:state" }
 
 
 // Power
@@ -71,6 +73,7 @@ Group:Number:SUM gConsumEntry		"Entry"		(gConsumptions)
 Group:Number:SUM gConsumCellar		"Cellar"	(gConsumptions)
 Group:Number:SUM gConsumLaundry		"Laundry"	(gConsumptions)
 Group:Number:SUM gConsumBath		"Bath"		(gConsumptions)
+Group:Number:SUM gConsumUpStairs			"Upsatirs"  (gConsumptions)
 
 
 Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:studio_front:activeEnergy" }
@@ -101,3 +104,4 @@ Number consum_light_bath_fan "Fan"			(gConsumBath) 	[ "consumption" ] { channel=
 Number consum_light_bath "Ceiling"			(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_dimmer:bath:activeEnergy" }
 Number consum_outlet_bath "Bath Outlet" 	(gConsumBath) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_bathroom1:activeEnergy" }
 
+Number consum_stairs_2nd "Stairs"	(ConsumUpStairs) 	 [ "consumption" ] { channel="mox:1_gang_onoff:stairs_2nd:activeEnergy" }
