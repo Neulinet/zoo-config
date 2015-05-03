@@ -21,7 +21,7 @@ Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "m
 Group:Switch:OR(ON, OFF) gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gStairs 	"Stairs" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gExterior 	"Exterior" 	(gRooms) [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) gDinning 	"Dinning" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gDining 	"Dining" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gMaster	"Master" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gKitchen 	"Kitchen" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gLiving	"Living" 	(gRooms) [ "home-group", "room", "master-switch" ]
@@ -53,11 +53,15 @@ Dimmer light_ext_entry     "Entry"	(gExterior ) 	 [ "light" ] { channel="mox:1_g
 
 Dimmer light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:west_deck:state" }
 Dimmer light_Launge    "Launge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Launge:state" }
-Dimmer light_Kitchen   "Launge"	(gKitchen ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen:state" }
+Dimmer light_Kitchen   "Kitchen"	(gKitchen ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen:state" }
 Dimmer light_Round_light_box   "Light Box"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Round_light_box:state" }
-Dimmer light_dining   "Dining"	(gDinning ) 	 [ "light" ] { channel="mox:1_gang_dimmer:dining:state" }
-
-
+Dimmer light_dining   "Dining"	(gDining ) 	 [ "light" ] { channel="mox:1_gang_dimmer:dining:state" }
+Dimmer light_Master_bed   "Master Bed"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Master_bed:state" }
+Dimmer light_walking_robe   "Walking"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:walking_robe:state" }
+Dimmer light_ensuite   "Ensuite"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ensuite:state" }
+Dimmer light_mirror   "Mirror"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:mirror:state" }
+Switch light_fan   "Fan"	(gMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:state" }
+Dimmer light_east_deck   "East Deck"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:east_deck:state" }
 
 // Power
 
@@ -76,6 +80,17 @@ Switch power_entry1 "Entry 1"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:
 Switch power_entry2 "Entry 2"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
 
 Switch power_bath_main "Bathroom" (gBath)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
+Switch power_outlet_entert1 "Enterteinement 1" (gliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
+Switch power_outlet_entert2 "Enterteinement 2" (gliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
+Switch power_outlet_kitchen "Kitchen" (gkitchen)	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:state" }
+Switch power_outlet_dining "Dining" (gdining)	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:state" }
+Switch power_outlet_master "Master 1"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:state" }
+Switch power_outlet_master2 "Master 2"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:state" }
+Switch power_outlet_master3 "Master 3"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:state" }
+
+
+
+
 
 
 
@@ -91,6 +106,10 @@ Group:Number:SUM gConsumLaundry		"Laundry"	(gConsumptions)
 Group:Number:SUM gConsumBath		"Bath"		(gConsumptions)
 Group:Number:SUM gConsumUpStairs	"Upstairs"      (gConsumptions)
 Group:Number:SUM gConsumExterior	"Exterior"      (gConsumptions)
+Group:Number:SUM gConsumDining 		"Dining" 	(gCosumptions)
+Group:Number:SUM gConsumMaster 		"Master" 	(gCosumptions)
+Group:Number:SUM gConsumKitchen 	"Kitchen" 	(gCosumptions)
+Group:Number:SUM gConsumLiving 		"Living" 	(gCosumptions)
 
 
 Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:studio_front:activeEnergy" }
@@ -124,3 +143,13 @@ Number consum_outlet_bath "Bath Outlet" 	(gConsumBath) 	[ "consumption" ] { chan
 Number consum_stairs_2nd "Stairs"	(gConsumUpStairs) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:stairs_2nd:activeEnergy" }
 
 Number consum_ext_fronteast     "Front East"	(gConsumExterior ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:ext_fronteast:activeEnergy" }
+
+Number consum_ext_north1     "North"	(gConsumExterior ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:ext_north1:activeEnergy" }
+Number consum_ext_north2     "North 2nd"	(gConsumExterior ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:ext_norht2:activeEnergy" }
+Number consum_west_deck     "West Deck"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:west_deck:activeEnergy" }
+Number consum_Lounge    "Lounge"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:west_deck:activeEnergy" }
+Number consum_Kitchen    "Kitchen"	(gConsumKitchen ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:Kitchen:activeEnergy" }
+
+
+
+
