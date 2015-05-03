@@ -21,6 +21,10 @@ Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "m
 Group:Switch:OR(ON, OFF) gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gStairs 	"Stairs" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gExterior 	"Exterior" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gDinning 	"Dinning" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gMaster	"Master" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gKitchen 	"Kitchen" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gLiving	"Living" 	(gRooms) [ "home-group", "room", "master-switch" ]
 
 // Lights
 
@@ -41,7 +45,19 @@ Dimmer light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_dim
 Switch light_bath_fan "Fan"			(gBath) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
 Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath:state" } 
 Dimmer light_stairs_2nd     "Stairs"	(gStairs ) 	 [ "light" ] { channel="mox:1_gang_dimmer:stairs_2nd:state" }
+
 Dimmer light_ext_fronteast     "Front East"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_fronteast:state" }
+Dimmer light_ext_north1     "North 1"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_north1:state" }
+Dimmer light_ext_north2    "North 2"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_north2:state" }
+Dimmer light_ext_entry     "Entry"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_entry:state" }
+
+Dimmer light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:west_deck:state" }
+Dimmer light_Launge    "Launge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Launge:state" }
+Dimmer light_Kitchen   "Launge"	(gKitchen ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen:state" }
+Dimmer light_Round_light_box   "Light Box"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Round_light_box:state" }
+Dimmer light_dining   "Dining"	(gDinning ) 	 [ "light" ] { channel="mox:1_gang_dimmer:dining:state" }
+
+
 
 // Power
 
