@@ -48,7 +48,7 @@ Number power_outlet_bath "Bath Outlet" 	(gPowerBath) 	[ "power" ] { channel="mox
 // Stairs 
 Number power_stairs_2nd     "Stairs"	(gPowerStairs ) 	 [ "power" ] { channel="mox:1_gang_dimmer:stairs_2nd:activePower" }
 // Exterior 			
-number power_ext_fronteast     "Front East"	Power	 [ "power" ] { channel="mox:1_gang_dimmer:ext_fronteast:activePower" }	
+number power_ext_fronteast     "Front East"	(gPowerExterior )	 [ "power" ] { channel="mox:1_gang_dimmer:ext_fronteast:activePower" }	
 number power_ext_north1     "North 1"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north1:activePower" }	
 number power_ext_north2    "North 2"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north2:activePower" }	
 number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_entry:activePower" }	
