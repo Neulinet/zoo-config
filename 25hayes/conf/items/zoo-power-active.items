@@ -48,36 +48,36 @@ Number power_outlet_bath "Bath Outlet" 	(gPowerBath) 	[ "power" ] { channel="mox
 // Stairs 
 Number power_stairs_2nd     "Stairs"	(gPowerStairs ) 	 [ "power" ] { channel="mox:1_gang_dimmer:stairs_2nd:activePower" }
 // Exterior 			
-number power_ext_fronteast     "Front East"	(gPowerExterior )	 [ "power" ] { channel="mox:1_gang_dimmer:ext_fronteast:activePower" }	
-number power_ext_north1     "North 1"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north1:activePower" }	
-number power_ext_north2    "North 2"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north2:activePower" }	
-number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_entry:activePower" }	
+Number power_ext_fronteast     "Front East"	(gPowerExterior )	 [ "power" ] { channel="mox:1_gang_dimmer:ext_fronteast:activePower" }	
+Number power_ext_north1     "North 1"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north1:activePower" }	
+Number power_ext_north2    "North 2"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_north2:activePower" }	
+Number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ext_entry:activePower" }	
 			
 // Deck West 			
-number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:west_deck:activePower" }	
+Number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:west_deck:activePower" }	
 			
 // Launge			
-number power_Launge    "Launge"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Launge:activePower" }	
-number power_outlet_entert1 "Enterteinement 1"	(gPowerlivingPower)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
-number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
-number power_Round_light_box   "Light Box"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Round_power_box:activePower" }	
+Number power_Launge    "Launge"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Launge:activePower" }	
+Number power_outlet_entert1 "Enterteinement 1"	(gPowerlivingPower)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
+Number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
+Number power_Round_light_box   "Light Box"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Round_power_box:activePower" }	
 			
 // Kitchen 			
-number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Kitchen:activePower" }	
-number power_outlet_kitchen "Kitchen" 	(gPowerKitchen ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:activePower" }	
+Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Kitchen:activePower" }	
+Number power_outlet_kitchen "Kitchen" 	(gPowerKitchen ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:activePower" }	
 			
 // Dinning			
-number power_dining   "Dining"	(gPowerDiningPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:dining:activePower" }	
-number power_outlet_dining "Dining" 	(gPowerDiningPower ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
+Number power_dining   "Dining"	(gPowerDiningPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:dining:activePower" }	
+Number power_outlet_dining "Dining" 	(gPowerDiningPower ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
 			
 //Master			
-number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Master_bed:activePower" }	
-number power_walking_robe   "Walking"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:walking_robe:activePower" }	
-number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ensuite:activePower" }	
-number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:mirror:activePower" }	
-number power_fan   "Fan"	(gPowerMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:activePower" }	
-number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:east_deck:activePower" }	
-number power_outlet_master "Master 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
-number power_outlet_master2 "Master 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
-number power_outlet_master3 "Master 3"	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:activePower" }	
+Number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Master_bed:activePower" }	
+Number power_walking_robe   "Walking"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:walking_robe:activePower" }	
+Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ensuite:activePower" }	
+Number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:mirror:activePower" }	
+Number power_fan   "Fan"	(gPowerMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:activePower" }	
+Number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:east_deck:activePower" }	
+Number power_outlet_master "Master 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
+Number power_outlet_master2 "Master 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
+Number power_outlet_master3 "Master 3"	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:activePower" }	
 
