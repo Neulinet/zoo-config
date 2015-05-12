@@ -39,30 +39,30 @@ Switch power_ralph_bed1 "Bed 1"	(gRalph) 	[ "power" ] { channel="mox:1_gang_onof
 Switch power_ralph_bed2 "Bed 2"	(gRalph) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph2:state" } 
 
 // Office
-Dimmer light_office "Office"	 	(gOffice) 	 [ "light" ] { channel="mox:1_gang_dimmer:office:state" }
-Switch power_office1 "Office 1"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office1:state" }
-Switch power_office2 "Office 2"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office2:state" } 
-Switch power_office3 "Office 3"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office3:state" } 
-Switch power_office4 "Office 4"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office4:state" } 
+Dimmer light_office "Office Light"	 	(gOffice) 	 [ "light" ] { channel="mox:1_gang_dimmer:office:state" }
+Switch power_office1 "Office Outlet 1"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office1:state" }
+Switch power_office2 "Office Outlet 2"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office2:state" } 
+Switch power_office3 "Office Outlet 3"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office3:state" } 
+Switch power_office4 "Office Outlet 4"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office4:state" } 
 
 // Entry 
-Dimmer light_entry "Entry"	 		(gEntry) 	 [ "light" ] { channel="mox:1_gang_dimmer:entry:state" }
-Switch power_entry1 "Entry 1"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:state" } 
-Switch power_entry2 "Entry 2"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
+Dimmer light_entry "Entry Light"	 		(gEntry) 	 [ "light" ] { channel="mox:1_gang_dimmer:entry:state" }
+Switch power_entry1 "Entry Outlet 1"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:state" } 
+Switch power_entry2 "Entry Outlet 2"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
 
 // Cellar
 Dimmer light_cellar "Cellar"	 	(gCellar) 	 [ "light" ] { channel="mox:1_gang_dimmer:cellar:state" }
 
 // Laundry 
-Switch light_laundry "Laundry Lighst and Fan"	(gLaundry) 	 ["light"] { channel="mox:1_gang_onoff:laundry:state" }
-Switch power_laundry_laundry	"Laundry"	(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:state" } 
+Switch light_laundry "Laundry Lights and Fan"	(gLaundry) 	 ["light"] { channel="mox:1_gang_onoff:laundry:state" }
+Switch power_laundry_laundry	"Laundry Power"	(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:state" } 
 Switch power_laundry_fan		"Washer and Dryer"		(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:state" }
 
 // 1st floor bathroom 
 Dimmer light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath_mirror:state" } 
 Switch light_bath_fan "Fan"			(gBath) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
 Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath:state" } 
-Switch power_bath_main "Bathroom" (gBath)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
+Switch power_bath_main "Bath Outlet" (gBath)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
 
 // Stairs
 Dimmer light_stairs_2nd     "Stairs"	(gStairs ) 	 [ "light" ] { channel="mox:1_gang_dimmer:stairs_2nd:state" }
@@ -78,8 +78,8 @@ Dimmer light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1
 
 // Launge
 Dimmer light_Launge    "Launge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Launge:state" }
-Switch power_outlet_entert1 "Enterteinement 1" (gliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
-Switch power_outlet_entert2 "Enterteinement 2" (gliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
+Switch power_outlet_entert1 "Enterteinement 1" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
+Switch power_outlet_entert2 "Enterteinement 2" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
 Dimmer light_Round_light_box   "Light Box"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_dimmer:Round_light_box:state" }
 
 // Kitchen 
