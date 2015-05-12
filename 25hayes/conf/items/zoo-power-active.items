@@ -68,7 +68,7 @@ number power_outlet_kitchen "Kitchen" 	(gPowerKitchen ) 	[ "power" ] { channel="
 			
 // Dinning			
 number power_dining   "Dining"	(gPowerDiningPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:dining:activePower" }	
-number power_outlet_dining "Dining" (gdining)	(gPowerDiningPower ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
+number power_outlet_dining "Dining" 	(gPowerDiningPower ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
 			
 //Master			
 number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Master_bed:activePower" }	

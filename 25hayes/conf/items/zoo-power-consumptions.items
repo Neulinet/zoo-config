@@ -67,7 +67,7 @@ number consum_outlet_kitchen "Kitchen" 	(gConsumKitchen ) 	[ "consumption" ] { c
 		
 // Dinning		
 number consum_dining   "Dining"	(gConsumDiningConsum ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:dining:activeEnergy" }
-number consum_outlet_dining "Dining" (gdining)	(gConsumDiningConsum ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_dining:activeEnergy" }
+number consum_outlet_dining "Dining"	(gConsumDiningConsum ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_dining:activeEnergy" }
 		
 //Master		
 number consum_Master_bed   "Master Bed"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:Master_bed:activeEnergy" }
