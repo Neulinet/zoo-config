@@ -30,7 +30,7 @@ Number power_outlet_entry2 "Entry Outlet 2" (gPowerEntry) [ "power" ] { channel=
 
 Number power_light_cellar "Cellar"	 		(gPowerCellar) [ "power" ] { channel="mox:1_gang_dimmer:cellar:activePower" }
 
-Number power_light_laundry "Laundry+Fan"	(gPowerLaundry) ["power"] { channel="mox:1_gang_onoff:laundry:activePower" }
+Number power_light_laundry "Laundry Lights and Fan"	(gPowerLaundry) ["power"] { channel="mox:1_gang_onoff:laundry:activePower" }
 Number power_outlet_laundry1 "Laundry Outlet 1" (gPowerLaundry) [ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:activePower" }
 Number power_outlet_laundry2 "Laundry Outlet 2" (gPowerLaundry) [ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:activePower" }
 
