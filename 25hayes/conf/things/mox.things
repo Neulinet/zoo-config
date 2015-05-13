@@ -42,8 +42,10 @@ mox:1_gang_onoff:stairs_2nd	[ oid=352 ]
 mox:1_gang_onoff:west_deck [ oid=348 ]
 mox:1_gang_onoff:Lounge [ oid=242 ]
 mox:1_gang_onoff:Kitchen [ oid=501 ]
-mox:1_gang_dimmer:Round_light_box [ oid=239 ]
-mox:1_gang_onoff:dining [ oid=245 ]
+
+
+mox:1_gang_onoff:Round_light_box [ oid=239 ]
+mox:1_gang_onoff:dining [ oid=345 ]
 mox:1_gang_onoff:Master_bed [ oid=502 ]
 mox:1_gang_onoff:walking_robe [ oid=237 ]
 mox:1_gang_dimmer:ensuite [ oid=236 ]
