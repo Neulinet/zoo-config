@@ -2,7 +2,7 @@ mox:gateway:221 [ udpHost="192.168.0.253", udpPort=6670 ]
 
 mox:1_gang_dimmer:studio_front	[ oid=210 ]
 mox:1_gang_dimmer:studio_back	[ oid=206 ]
-mox:1_gang_onoff:garage_door	[ oid=314 ]
+
 
 mox:1_gang_dimmer:ralph_bed		[ oid=209 ]
 mox:1_gang_onoff:outlet_ralph1	[ oid=313 ]
