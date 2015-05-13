@@ -59,11 +59,11 @@ Number consum_west_deck     "West Deck"	(gConsumLiving ) 	 [ "consumption" ] { c
 Number consum_Launge    "Launge"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:Launge:activeEnergy" }
 Number consum_outlet_entert1 "Enterteinement 1"	(gConsumliving)	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_entert1:activeEnergy" }
 Number consum_outlet_entert2 "Enterteinement 2" (gConsumLiving )		[ "consumption" ] { channel="mox:1_gang_onoff:outlet_entert2:activeEnergy" }
-Number consum_Round_light_box   "Light Box"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_dimmer:Round_power_box:activeEnergy" }
+Number consum_Round_light_box   "Light Box"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:Round_power_box:activeEnergy" }
 		
 // Kitchen 		
 Number consum_Kitchen   "Kitchen"	(gConsumKitchen ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen:activeEnergy" }
-Number consum_outlet_kitchen "Kitchen" 	(gConsumKitchen ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_kitchen:activeEnergy" }
+Number consum_outlet_kitchen "Kitchen Outlet" 	(gConsumKitchen ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_kitchen:activeEnergy" }
 		
 // Dinning		
 Number consum_dining   "Dining"	(gConsumDining ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:dining:activeEnergy" }
