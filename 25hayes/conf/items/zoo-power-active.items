@@ -60,7 +60,7 @@ Number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { chan
 Number power_Launge    "Launge"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Launge:activePower" }	
 Number power_outlet_entert1 "Enterteinement 1"	(gPowerliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
 Number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
-Number power_Round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Round_power_box:activePower" }	
+Number power_Round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Round_power_box:activePower" }	
 			
 // Kitchen 			
 Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:Kitchen:activePower" }	
@@ -77,7 +77,7 @@ Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_
 Number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:mirror:activePower" }	
 Number power_fan   "Fan"	(gPowerMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:activePower" }	
 Number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:east_deck:activePower" }	
-Number power_outlet_master "Master 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
-Number power_outlet_master2 "Master 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
-Number power_outlet_master3 "Master 3"	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:activePower" }	
+Number power_outlet_master "Master outlet 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
+Number power_outlet_master2 "Master outlet 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
+Number power_outlet_master3 "Master outlet 3"	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:activePower" }	
 
