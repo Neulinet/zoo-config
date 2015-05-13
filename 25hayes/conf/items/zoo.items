@@ -59,19 +59,19 @@ Switch power_laundry_laundry	"Laundry Power"	(gLaundry) 	[ "power" ] { channel="
 Switch power_laundry_fan		"Washer and Dryer"		(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:state" }
 
 // 1st floor bathroom 
-Dimmer light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath_mirror:state" } 
+Switch light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_onoff:bath_mirror:state" } 
 Switch light_bath_fan "Fan"			(gBath) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
 Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath:state" } 
 Switch power_bath_main "Bath Outlet" (gBath)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
 
 // Stairs
-Dimmer light_stairs_2nd     "Stairs"	(gStairs ) 	 [ "light" ] { channel="mox:1_gang_onoff:stairs_2nd:state" }
+Switch light_stairs_2nd     "Stairs"	(gStairs ) 	 [ "light" ] { channel="mox:1_gang_onoff:stairs_2nd:state" }
 
 // Exterior 
-Dimmer light_ext_fronteast     "Front East"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_fronteast:state" }
-Dimmer light_ext_north1     "North 1"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_north1:state" }
-Dimmer light_ext_north2    "North 2"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_north2:state" }
-Dimmer light_ext_entry     "Entry"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ext_entry:state" }
+Switch light_ext_fronteast     "Front East"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_onoff:ext_fronteast:state" }
+Switch light_ext_north1     "North 1"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_onoff:ext_north1:state" }
+Switch light_ext_north2    "North 2"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_onoff:ext_north2:state" }
+Switch light_ext_entry     "Entry"	(gExterior ) 	 [ "light" ] { channel="mox:1_gang_onoff:ext_entry:state" }
 
 // Deck West 
 Switch light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:west_deck:state" }
