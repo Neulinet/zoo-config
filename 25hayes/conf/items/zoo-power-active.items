@@ -57,18 +57,18 @@ Number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mo
 Number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_onoff:west_deck:activePower" }	
 			
 // Launge			
-Number power_Launge    "Launge"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_onoff:Launge:activePower" }	
-Number power_outlet_entert1 "Enterteinement 1"	(gPowerlivingPower)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
+Number power_Launge    "Launge"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Launge:activePower" }	
+Number power_outlet_entert1 "Enterteinement 1"	(gPowerliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
 Number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
-Number power_Round_light_box   "Light Box"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Round_power_box:activePower" }	
+Number power_Round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_dimmer:Round_power_box:activePower" }	
 			
 // Kitchen 			
 Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:Kitchen:activePower" }	
 Number power_outlet_kitchen "Kitchen Outlet" 	(gPowerKitchen ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:activePower" }	
 			
 // Dinning			
-Number power_dining   "Dining"	(gPowerDiningPower ) 	 [ "power" ] { channel="mox:1_gang_onoff:dining:activePower" }	
-Number power_outlet_dining "Dining" 	(gPowerDiningPower ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
+Number power_dining   "Dining"	(gPowerDining ) 	 [ "power" ] { channel="mox:1_gang_onoff:dining:activePower" }	
+Number power_outlet_dining "Dining" 	(gPowerDining ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
 			
 //Master			
 Number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:Master_bed:activePower" }	
