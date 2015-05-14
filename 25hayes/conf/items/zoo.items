@@ -88,7 +88,7 @@ Switch power_outlet_kitchen "Kitchen Outlet" (gKitchen)	[ "power" ] { channel="m
 
 // Dinning
 Switch light_dining   "Dining"	(gDining ) 	 [ "light" ] { channel="mox:1_gang_onoff:dining:state" }
-Switch power_outlet_dining "Dining" (gDining)	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:state" }
+Switch power_outlet_dining "Dining Outlet" (gDining)	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:state" }
 
 //Master
 Switch light_Master_bed   "Master Bed"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:Master_bed:state" }
