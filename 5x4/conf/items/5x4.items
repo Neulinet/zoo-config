@@ -1,0 +1,43 @@
+Group gZooPower
+Group gZooPowerChart
+Group gZooPowerDay
+Group gZooPowerWeek
+Group gZooPowerMonth
+
+Group gRooms
+
+DateTime billPeriod_start
+DateTime billPeriod_end
+
+
+// Rooms and Master Switches
+
+Group:Switch:OR(ON, OFF) gGarage 	"Garage" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gBedroom 	"Bedroom" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gOffice 	"Office" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gKitchen 	"Kitchen" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gRooftop 	"Rooftop" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gExterior 		"Exterior" 	(gRooms) [ "home-group", "room", "master-switch" ]
+
+// Lights and Power per room 
+
+// Garage
+Dimmer Lights_Garage_Strip_Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_dimmer:Garage_Strip_Lights:state" }
+Dimmer light_Garage_Shower_Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_dimmer:Garage_Shower_Lights:state" }
+Switch power_Coms_cupboard "Coms Cupboard"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Coms_cupboard:state" }
+Switch power_Entrance "Entrance"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Entrance:state" }
+Switch power_FCU "FCU"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:FCU:state" }
+Switch power_Garage "Garage"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Garage:state" }
+
+
+// Bedroom
+
+// Office
+
+// Kitchen
+
+// Rooftop
+
+// Bath
+
