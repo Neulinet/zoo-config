@@ -1,0 +1,83 @@
+
+// Power
+
+Group:Number:SUM gPower		"Power Active" (gZooPower) [ "home-group" ]
+Group:Number:SUM gPowerStudio		"Studio"	(gPower)
+Group:Number:SUM gPowerRalph		"Ralph"		(gPower)
+Group:Number:SUM gPowerOffice		"Office"	(gPower)
+Group:Number:SUM gPowerEntry		"Entry"		(gPower)
+Group:Number:SUM gPowerCellar		"Cellar"	(gPower)
+Group:Number:SUM gPowerLaundry		"Laundry"	(gPower)
+Group:Number:SUM gPowerBath		"Bathroom"		(gPower)
+Group:Number:SUM gPowerLaundry "Laundry" 	(gPower) 
+Group:Number:SUM gPowerStairs 	"Stairs" 	(gPower) 
+Group:Number:SUM gPowerExterior "Exterior" 	(gPower) 
+Group:Number:SUM gPowerDining 	"Dining" 	(gPower) 
+Group:Number:SUM gPowerMaster	"Master" 	(gPower)
+Group:Number:SUM gPowerKitchen "Kitchen" 	(gPower) 
+Group:Number:SUM gPowerLiving	"Living" 	(gPower)
+
+// Studio 
+Number power_light_studio_front "Front" (gPowerStudio) { channel="mox:1_gang_dimmer:studio_front:activePower" }
+Number power_light_studio_back "Back" (gPowerStudio) { channel="mox:1_gang_dimmer:studio_back:activePower" }
+// Ralphs Room
+Number power_light_ralph_bed "Bed"	 		(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_dimmer:ralph_bed:activePower" }
+Number power_outlet_ralph_bed1 "Bed Outlet 1"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:ralph_bed1:activePower" }
+Number power_outlet_ralph_bed1 "Bed Outlet 2"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:ralph_bed2:activePower" }
+// Office
+Number power_light_office "Office Light"	 		(gPowerOffice) [ "power" ] { channel="mox:1_gang_dimmer:office:activePower" }
+Number power_outlet_office1 "Office Outlet 1"		(gPowerOffice) [ "power" ] { channel="mox:1_gang_onoff:outlet_office1:activePower" }
+Number power_outlet_office2 "Office Outlet 2"		(gPowerOffice) [ "power" ] { channel="mox:1_gang_onoff:outlet_office2:activePower" }
+Number power_outlet_office3 "Office Outlet 3"		(gPowerOffice) [ "power" ] { channel="mox:1_gang_onoff:outlet_office3:activePower" }
+Number power_outlet_office4 "Office Outlet 4"		(gPowerOffice) [ "power" ] { channel="mox:1_gang_onoff:outlet_office4:activePower" }
+// Entry
+Number power_light_entry "Entry Light"	 		(gPowerEntry) [ "power" ] { channel="mox:1_gang_dimmer:entry:activePower" }
+Number power_outlet_entry1 "Entry Outlet 1" (gPowerEntry) [ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:activePower" }
+Number power_outlet_entry2 "Entry Outlet 2" (gPowerEntry) [ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:activePower" }
+// Cellar
+Number power_light_cellar "Cellar"	 		(gPowerCellar) [ "power" ] { channel="mox:1_gang_dimmer:cellar:activePower" }
+// Laundry 
+Number power_light_laundry "Laundry Lights and Fan"	(gPowerLaundry) ["power"] { channel="mox:1_gang_onoff:laundry:activePower" }
+Number power_outlet_laundry1 "Laundry Power" (gPowerLaundry) [ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:activePower" }
+Number power_outlet_laundry2 "Washer and Dryer" (gPowerLaundry) [ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:activePower" }
+// Bathroom
+Number power_light_bath_mirror "Mirror"	(gPowerBath) 	[ "power" ] { channel="mox:1_gang_onoff:bath_mirror:activePower" }
+Number power_light_bath_fan "Fan"			(gPowerBath) 	[ "power" ] { channel="mox:1_gang_onoff:bath_fan:activePower" }
+Number power_light_bath "Ceiling"			(gPowerBath) 	[ "power" ] { channel="mox:1_gang_dimmer:bath:activePower" }
+Number power_outlet_bath "Bath Outlet" 	(gPowerBath) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:activePower" }
+// Stairs 
+Number power_stairs_2nd     "Stairs"	(gPowerStairs ) 	 [ "power" ] { channel="mox:1_gang_onoff:stairs_2nd:activePower" }
+// Exterior 			
+Number power_ext_fronteast     "Front East"	(gPowerExterior )	 [ "power" ] { channel="mox:1_gang_onoff:ext_fronteast:activePower" }	
+Number power_ext_north1     "North 1"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_onoff:ext_north1:activePower" }	
+Number power_ext_north2    "North 2"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_onoff:ext_north2:activePower" }	
+Number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mox:1_gang_onoff:ext_entry:activePower" }	
+			
+// Deck West 			
+Number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_onoff:west_deck:activePower" }	
+			
+// Launge			
+Number power_Launge    "Launge"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Launge:activePower" }	
+Number power_outlet_entert1 "Enterteinement 1"	(gPowerliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
+Number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
+Number power_Round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Round_power_box:activePower" }	
+			
+// Kitchen 			
+Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:Kitchen:activePower" }	
+Number power_outlet_kitchen "Kitchen Outlet" 	(gPowerKitchen ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:activePower" }	
+			
+// Dinning			
+Number power_dining   "Dining"	(gPowerDining ) 	 [ "power" ] { channel="mox:1_gang_onoff:dining:activePower" }	
+Number power_outlet_dining "Dining" 	(gPowerDining ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:activePower" }	
+			
+//Master			
+Number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:Master_bed:activePower" }	
+Number power_walking_robe   "Walking"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:walking_robe:activePower" }	
+Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ensuite:activePower" }	
+Number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:mirror:activePower" }	
+Number power_fan   "Fan"	(gPowerMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:activePower" }	
+Number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:east_deck:activePower" }	
+Number power_outlet_master "Master outlet 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
+Number power_outlet_master2 "Master outlet 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
+Number power_outlet_master3 "Master outlet 3"	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:activePower" }	
+

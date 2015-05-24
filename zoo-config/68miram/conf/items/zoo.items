@@ -1,0 +1,70 @@
+Group gZooPower
+Group gZooPowerChart
+Group gZooPowerDay
+Group gZooPowerWeek
+Group gZooPowerMonth
+
+Group gRooms
+
+DateTime billPeriod_start
+DateTime billPeriod_end
+
+
+// Rooms
+
+Group gStudio 	"Studio" 	(gRooms) [ "home-group", "room" ]
+Group gOffice 	"Office" 	(gRooms) [ "home-group", "room" ]
+Group gRalph 	"Ralph" 	(gRooms) [ "home-group", "room" ]
+Group gEntry 	"Entry" 	(gRooms) [ "home-group", "room" ]
+Group gCellar 	"Cellar" 	(gRooms) [ "home-group", "room" ]
+Group gBath 	"Bathroom" 	(gRooms) [ "home-group", "room" ]
+Group gLaundry 	"Laundry" 	(gRooms) [ "home-group", "room" ]
+
+// Master Switches
+
+Group:Switch:OR(ON, OFF) master_studio 	"Master Switch" (gStudio) [ "master" ]
+Group:Switch:OR(ON, OFF) master_office 	"Master Switch" (gOffice) [ "master" ]
+Group:Switch:OR(ON, OFF) master_ralph 	"Master Switch" (gRalph) [ "master" ]
+Group:Switch:OR(ON, OFF) master_entry 	"Master Switch" (gEntry) [ "master" ]
+Group:Switch:OR(ON, OFF) master_cellar 	"Master Switch" (gCellar) [ "master" ]
+Group:Switch:OR(ON, OFF) master_bath 	"Master Switch" (gBath) [ "master" ]
+Group:Switch:OR(ON, OFF) master_laundry "Master Switch" (gLaundry) [ "master" ]
+
+// Lights
+
+Dimmer light_studio_front "Front" 	(gStudio) 	[ "light" ] 
+
+Dimmer light_studio_back "Back" 	(gStudio) 	[ "light" ]
+
+Dimmer light_ralph_bed "Bed"	 	(gRalph) 	[ "light" ]
+
+Dimmer light_office "Office"	 	(gOffice) 	[ "light" ]
+
+Dimmer light_entry "Entry"	 		(gEntry) 	[ "light" ]
+
+Dimmer light_cellar "Cellar"	 	(gCellar) 	[ "light" ]
+
+Switch light_laundry "Laundry+Fan"	(gLaundry) 	["light"]
+
+Dimmer light_bath_mirror "Mirror"	(gBath) 	[ "light" ]
+Switch light_bath_fan "Fan"			(gBath) 	[ "fan" ]
+Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ]
+
+
+// Power
+
+Switch power_office1 "Office 1"	(gOffice) 	[ "power" ]
+Switch power_office2 "Office 2"	(gOffice) 	[ "power" ]
+Switch power_office3 "Office 3"	(gOffice) 	[ "power" ]
+Switch power_office4 "Office 4"	(gOffice) 	[ "power" ]
+
+Switch power_ralph_bed1 "Bed 1"	(gRalph) 	[ "power" ]
+Switch power_ralph_bed2 "Bed 2"	(gRalph) 	[ "power" ]
+
+Switch power_laundry_laundry	"Laundry"	(gLaundry) 	[ "power" ]
+Switch power_laundry_fan		"Fan"		(gLaundry) 	[ "power" ]
+
+Switch power_entry1 "Entry 1"		(gEntry)	[ "power" ]
+Switch power_entry2 "Entry 2"		(gEntry)	[ "power" ]
+
+Switch power_bath_main "Bathroom" (gBath)	[ "power" ]
