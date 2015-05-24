@@ -76,8 +76,8 @@ Switch light_ext_entry     "Entry"	(gExterior ) 	 [ "light" ] { channel="mox:1_g
 // Deck West 
 Switch light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:west_deck:state" }
 
-// Launge
-Switch light_Launge    "Launge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:Launge:state" }
+// Lounge
+Switch light_Lounge    "Lounge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:Lounge:state" }
 Switch power_entert1 "Enterteinement 1" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
 Switch power_entert2 "Enterteinement 2" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
 Dimmer light_Round_light_box   "Light Box"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:Round_light_box:state" }
@@ -92,7 +92,7 @@ Switch power_dining1 "Dining Outlet" (gDining)	[ "power" ] { channel="mox:1_gang
 
 //Master
 Switch light_Master_bed   "Master Bed"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:Master_bed:state" }
-Switch light_walking_robe   "Walking"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:walking_robe:state" }
+Switch light_walking_robe  "Robe"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:walking_robe:state" }
 Dimmer light_ensuite   "Ensuite"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ensuite:state" }
 Switch light_mirror   "Mirror"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:mirror:state" }
 Switch light_fan   "Fan"	(gMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:state" }
