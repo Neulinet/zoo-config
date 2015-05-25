@@ -26,8 +26,8 @@ Group:Switch:OR(ON, OFF) gLibrary 	"Library/Stairs" 	(gRooms) [ "home-group", "r
 // Lights and Power per room 
 
 // Garage
-Dimmer lights_Garage_Strip_Lights "Garage Strip Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_dimmer:Garage_Strip_Lights:state" }
-Dimmer light_Garage_Shower_Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_dimmer:Garage_Shower_Lights:state" }
+Dimmer lights_Garage_Strip_Lights "Garage Strip Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_onoff:Garage_Strip_Lights:state" }
+Dimmer light_Garage_Shower_Lights	(gGarage) 	 [ "light" ] { channel="mox:1_gang_onoff:Garage_Shower_Lights:state" }
 Switch power_FCU "Ventilation"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:FCU:state" }
 Switch power_Garage "Garage"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Garage:state" }
 
@@ -43,7 +43,7 @@ Switch power_Bathroom "Bathroom"	(gBedroom) 	[ "power" ] { channel="mox:1_gang_o
 
 Switch power_Cupboard "Cupboard"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Cupboard:state" }
 Switch power_Office "Office"	(gGarage) 	[ "power" ] { channel="mox:1_gang_onoff:Office:state" }
-Dimmer light_Office_Cupboard "Cupboard"	(gGarage) 	 [ "light" ] { channel="mox:1_gang_dimmer:Office_Cupboard:state" }
+Dimmer light_Office_Cupboard "Cupboard"	(gGarage) 	 [ "light" ] { channel="mox:1_gang_onoff:Office_Cupboard:state" }
 
 
 // Kitchen
@@ -59,8 +59,8 @@ Switch power_Kitchen_Bench "Kitchen Bench"	(gKitchen) 	[ "power" ] { channel="mo
 Switch power_Under_Sink "Under Sink"	(gKitchen) 	[ "power" ] { channel="mox:1_gang_onoff:Under_Sink:state" }
 Switch power_Dishwasher "Dishwasher"	(gKitchen) 	[ "power" ] { channel="mox:1_gang_onoff:Dishwasher:state" }
 Switch power_Cooler "Cooler"	(gKitchen) 	[ "power" ] { channel="mox:1_gang_onoff:Coolers:state" }
-Switch light_Kitchen_track_Lights "Track Spots"	(gKitchen) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen_track_Lights:state" }
-Switch light_Office_Kitchen_Strip_Lights "Beam"	(gKitchen) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen_Strip_Lights:state" }
+Switch light_Kitchen_track_Lights "Track Spots"	(gKitchen) 	 [ "light" ] { channel="mox:1_gang_onoff:Kitchen_track_Lights:state" }
+Switch light_Office_Kitchen_Strip_Lights "Beam"	(gKitchen) 	 [ "light" ] { channel="mox:1_gang_onoff:Kitchen_Strip_Lights:state" }
 Dimmer light_Kitchen_Garden_Lights	"Planter Box" (gKitchen) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen_Garden_Lights:state" }
 Switch light_Kitchen_Bench_Ligths	"Bench" (gKitchen) 	 [ "light" ] { channel="mox:1_gang_dimmer:Kitchen_Bench_Ligths:state" }
 
@@ -74,7 +74,7 @@ Dimmer light_Stairs_Roof "Roof Stairs" (gRooftop) 	[ "light" ] { channel="mox:1_
 
 //Libray
 Switch power_Library "Library"	(gLibrary) 	[ "power" ] { channel="mox:1_gang_onoff:Library:state" }
-Dimmer light_Exterior_Lights	(gExterior_Lights) 	 [ "light" ] { channel="mox:1_gang_dimmer:Exterior_Lights:state" }
+Dimmer light_Exterior_Lights	(gExterior_Lights) 	 [ "light" ] { channel="mox:1_gang_onoff:Exterior_Lights:state" }
 
 
 //Laundry
