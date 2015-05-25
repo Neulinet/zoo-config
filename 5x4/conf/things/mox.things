@@ -1,19 +1,19 @@
 mox:gateway:221 [ udpHost="192.168.0.253"]
 
 
-mox:1_gang_dimmer:light_Stairs	[ oid=	349
-mox:1_gang_dimmer:Kitchen_track_Lights	[ oid=351 ]
-mox:1_gang_dimmer:Kitchen_Strip_Lights	[ oid=352 ]
-mox:1_gang_dimmer:Kitchen_Garden_Lights	[ oid=203 ]
+mox:1_gang_onoff:light_Stairs	[ oid=349 ]
+mox:1_gang_onoff:Kitchen_track_Lights	[ oid=351 ]
+mox:1_gang_onoff:Kitchen_Strip_Lights	[ oid=352 ]
+mox:1_gang_onoff:Kitchen_Garden_Lights	[ oid=203 ]
 mox:1_gang_dimmer:Kitchen_Bench_Ligths	[ oid=357 ]
-mox:1_gang_dimmer:Garage_Strip_Lights	[ oid=370 ]
-mox:1_gang_dimmer:Garage_Shower_Lights	[ oid=371 ]
-mox:1_gang_dimmer:Office_Cupboard	[ oid=372 ]
-mox:1_gang_dimmer:Exterior_Lights	[ oid=373 ]
-mox:1_gang_dimmer:Laundry_Lights	[ oid=374 ]
-mox:1_gang_dimmer:Garage_Track_Ligths	[ oid=375 ]
+mox:1_gang_onoff:Garage_Strip_Lights	[ oid=370 ]
+mox:1_gang_onff:Garage_Shower_Lights	[ oid=371 ]
+mox:1_gang_onoff:Office_Cupboard	[ oid=372 ]
+mox:1_gang_onoff:Exterior_Lights	[ oid=373 ]
+mox:1_gang_onoff:Laundry_Lights	[ oid=374 ]
+mox:1_gang_onoff:Garage_Track_Ligths	[ oid=375 ]
 mox:1_gang_dimmer:Stairs_Roof	[ oid=201 ]
-mox:1_gang_dimmer:Bedroom_Plant	[ oid=202 ]
+mox:1_gang_onoff:Bedroom_Plant	[ oid=202 ]
 
 
 mox:1_gang_onoff:Tv_Area 	[ oid=335 ]
