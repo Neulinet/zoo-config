@@ -40,8 +40,8 @@ Switch power_Garage 			"Garage GPO"	(gGarage) 	[ "power" ] 	{ channel="mox:1_gan
 // Kitchen/Living
 
 Switch power_Tv_Area 		"Tv Aerea GPO"		(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Tv_Area:state" }
-Switch power_Glass_Wall 				(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Glass_Wall:state" }	
-Switch power_Glass_Wall_2 				(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Glass_Wall_2:state" }
+Switch power_Glass_Wall 	"Glass Wall"			(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Glass_Wall:state" }	
+Switch power_Glass_Wall_2 	"Glass Wall 2"			(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Glass_Wall_2:state" }
 Switch power_Range_Hood 	"Range Hood GPO" 	(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Range_Hood:state" }
 Switch power_Side_Bench 	"Side Bench GPO" 	(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Side_Bench:state" }
 Switch power_Tv_Area_2 		"Tv Aerea 2 GPO" 	(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Tv_Area_2:state" }
