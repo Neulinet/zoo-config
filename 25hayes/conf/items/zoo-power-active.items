@@ -18,8 +18,8 @@ Group:Number:SUM gPowerKitchen "Kitchen" 	(gPower)
 Group:Number:SUM gPowerLiving	"Living" 	(gPower)
 
 // Studio 
-Number power_light_studio_front "Front" (gPowerStudio) { channel="mox:1_gang_dimmer:studio_front:activePower" }
-Number power_light_studio_back "Back" (gPowerStudio) { channel="mox:1_gang_dimmer:studio_back:activePower" }
+Number power_light_studio_front "Front" (gPowerStudio) [ "power" ] { channel="mox:1_gang_dimmer:studio_front:activePower" }
+Number power_light_studio_back "Back" (gPowerStudio)  [ "power" ] { channel="mox:1_gang_dimmer:studio_back:activePower" }
 // Ralphs Room
 Number power_light_ralph_bed "Bed"	 		(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_dimmer:ralph_bed:activePower" }
 Number power_outlet_ralph_bed1 "Bed Outlet 1"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:ralph_bed1:activePower" }
@@ -75,7 +75,7 @@ Number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="
 Number power_walking_robe   "Walking"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:walking_robe:activePower" }	
 Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ensuite:activePower" }	
 Number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:mirror:activePower" }	
-Number power_fan   "Fan"	(gPowerMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:activePower" }	
+Number power_fan   "Fan"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:fan:activePower" }	
 Number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:east_deck:activePower" }	
 Number power_outlet_master "Master outlet 1" 	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:activePower" }	
 Number power_outlet_master2 "Master outlet 2"  	(gPowerMaster ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:activePower" }	
