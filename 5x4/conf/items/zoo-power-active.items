@@ -1,13 +1,18 @@
 
 // Power
 
-
+Group:Number:SUM gPower		"Power Active" (gZooPower) [ "home-group" ]
+Group:Number:SUM gPowerGarage		"Garage/Office"	(gPower)
+Group:Number:SUM gPowerKitchen		"Kitchen/Living"	(gPower)
+Group:Number:SUM gPowerBedroom		"Bedroom/Ensuite"	(gPower)
+Group:Number:SUM gPowerLibrary		"Library/Stairs"	(gPower)
+Group:Number:SUM gPowerRooftop		"Roof Deck"	(gPower)
 
 
 
 // Garage/Office	
 	
-	Number power_light_Stairs "Stairs" (gPowerGarage) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
+	Number power_light_Stairs "Stairs" (gPowerGarage) [ "Power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
 	Number power_Garage_Strip_Lights "Beam" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Garage_Strip_Lights:activePower" }
 	Number power_Garage_Shower_Lights "Shower/Toilet" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onff:Garage_Shower_Lights:activePower" }
 	Number power_Garage_Track_Ligths "Track Spots" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Garage_Track_Ligths:activePower" }
