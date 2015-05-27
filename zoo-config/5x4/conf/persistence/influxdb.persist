@@ -1,7 +1,0 @@
-Strategies {
-	everyMinute : "0 * * * * ?"
-}
-
-Items {
-	gConsumptions* : strategy = everyChange, everyMinute
-}

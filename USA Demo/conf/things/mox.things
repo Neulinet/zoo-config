@@ -1,0 +1,16 @@
+mox:gateway:221 [ udpHost="192.168.0.253", udpPort=6670 ]
+
+
+
+mox:1_gang_dimmer:Dimmer_1 [ oid=201 ]
+mox:1_gang_dimmer:Dimmer_2 [ oid=202 ]
+
+mox:1_gang_onoff:Lights_1	[ oid=101 ]
+mox:1_gang_onoff:Lights_2	[ oid=102 ]
+
+mox:1_gang_onoff:outlet_1	[ oid=301 ]
+mox:1_gang_onoff:outlet_2	[ oid=302 ]
+
+
+
+

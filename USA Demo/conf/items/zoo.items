@@ -1,0 +1,52 @@
+Group gZooPower
+Group gZooPowerChart
+Group gZooPowerDay
+Group gZooPowerWeek
+Group gZooPowerMonth
+
+Group gRooms
+
+DateTime billPeriod_start
+DateTime billPeriod_end
+
+
+// Rooms and Master Switches
+
+Group:Switch:OR(ON, OFF) gDEMO 	"DEMO" 	(gRooms) [ "home-group", "room", "master-switch" ]
+
+
+
+ 
+
+Switch light_Lights_1 "Light 1" 	(gDEMO) 	 [ "light" ] { channel="mox:1_gang_onoff:Lights_1:state" }
+Switch light_Lights_2 "Light 2 " 	(gDEMO) 	 [ "light" ] { channel="mox:1_gang_onoff:Lights_2:state" }
+
+
+Dimmer light_Dimmer_1 "Dimmer 1"	 	(gDEMO) 	 [ "light" ] { channel="mox:1_gang_dimmer:Dimmer_1:state" }
+Dimmer light_Dimmer_2 "Dimmer 2"	 	(gDEMO) 	 [ "light" ] { channel="mox:1_gang_dimmer:Dimmer_2:state" }
+
+
+Switch power_outlet_1 "Outlet 1"	(gDEMO) 	[ "power" ] { channel="mox:1_gang_onoff:ooutlet_1:state" } 
+Switch power_outlet_2 "Outlet 2"	(gDEMO) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_2:state" } 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
