@@ -10,61 +10,61 @@ Group:Number:SUM gConsumRooftop		"Roof Deck"	(gConsumptions)
 
 // Garage/Office	
 	
-	Number consum_light_Stairs "Stairs" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
-	Number consum_Garage_Strip_Lights "Beam" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage_Strip_Lights:activeEnergy" }
-	Number consum_Garage_Shower_Lights "Shower/Toilet" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onff:Garage_Shower_Lights:activeEnergy" }
-	Number consum_Garage_Track_Ligths "Track Spots" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage_Track_Ligths:activeEnergy" }
-	Number consum_Cupboard "Office" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Office_Cupboard:activeEnergy" }
-	Number consum_Laundry "Laundry GPO 1" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Laundry:activeEnergy" }
-	Number consum_Laundry_2 "Laundry GPO 2" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Laundry_2:activeEnergy" }
-	Number consum_Entrance "Entry" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Entrance:activeEnergy" }
-	Number consum_FCU "Ventilation" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Cooler:activeEnergy" }
-	Number consum_Office "Office GPO" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Office:activeEnergy" }
-	Number consum_Garage "Garage GPO" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage:activeEnergy" }
+	Number consum_Stairs 				"Stairs" 		(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Stairs:activeEnergy" }
+	Number consum_Garage_Strip		"Beam" 			(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage_Strip:activeEnergy" }
+	Number consum_Garage_Shower		"Shower/Toilet" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onff:Garage_Shower:activeEnergy" }
+	Number consum_Garage_Track		"Track Spots" 	(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage_Track:activeEnergy" }
+	Number consum_Cupboard 					"Office" 		(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Office_Cupboard:activeEnergy" }
+	Number consum_Laundry 					"Laundry GPO 1" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Laundry:activeEnergy" }
+	Number consum_Laundry_2 				"Laundry GPO 2" (gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Laundry_2:activeEnergy" }
+	Number consum_Entrance 					"Entry" 		(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Entrance:activeEnergy" }
+	Number consum_FCU 						"Ventilation" 	(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Cooler:activeEnergy" }
+	Number consum_Office 					"Office GPO" 	(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Office:activeEnergy" }
+	Number consum_Garage 					"Garage GPO" 	(gConsumGarage) [ "consumption" ] { channel="mox:1_gang_onoff:Garage:activeEnergy" }
 	
 	
 	// Kitchen/Living
 	
-	Number consum_Tv_Area "Tv Aerea GPO" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Tv_Area:activeEnergy" }
-	Number consum_Glass_Wall (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
-	Number consum_Glass_Wall_2 (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall_2:activeEnergy" }
-	Number consum_Range_Hood "Range Hood GPO" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Range_Hood:activeEnergy" }
-	Number consum_Side_Bench "Side Bench GPO" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Side_Bench:activeEnergy" }
-	Number consum_Tv_Area_2 "Tv Aerea 2 GPO" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Tv_Area_2:activeEnergy" }
-	Number consum_Kitchen_Bench "Kitchen Bench GPO" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Bench:activeEnergy" }
-	Number consum_Under_Sink "Under the Sink GPO" (gConsumKitchen) [ "power" ] { channel="mox:1_gang_onoff:Under_Sink:activeEnergy" }
-	Number consum_Dishwasher "Dishwasher" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Dishwasher:activeEnergy" }
-	Number consum_Cooler "Cooler" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Cooler:activeEnergy" }
-	Number consum_light_Stairs "Stairs" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
-	Number consum_Bench_Ligths "Bench" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_dimmer:Kitchen_Bench_Ligths:activeEnergy" }
-	Number consum_track_light "Track Spots" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_track_Lights:activeEnergy" }
-	Number consum_Strip_light "Beam" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Strip_Lights:activeEnergy" }
-	Number consum_Garden_light "Planter Box" (gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Garden_Lights:activeEnergy" }
+	Number consum_Tv_Area 				"Tv Aerea GPO" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Tv_Area:activeEnergy" }
+	Number consum_Glass_Wall 			"Glass Wall" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
+	Number consum_Glass_Wall_2 			"Glass Wall 2 "			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall2:activeEnergy" }
+	Number consum_Range_Hood 			"Range Hood GPO" 		(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Range_Hood:activeEnergy" }
+	Number consum_Side_Bench 			"Side Bench GPO" 		(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Side_Bench:activeEnergy" }
+	Number consum_Tv_Area_2 			"Tv Aerea 2 GPO" 		(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Tv_Area_2:activeEnergy" }
+	Number consum_Kitchen_Bench 		"Kitchen Bench GPO" 	(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Bench:activeEnergy" }
+	Number consum_Under_Sink 			"Under the Sink GPO" 	(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Under_Sink:activeEnergy" }
+	Number consum_Dishwasher 			"Dishwasher" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Dishwasher:activeEnergy" }
+	Number consum_Cooler 				"Cooler" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Cooler:activeEnergy" }
+	Number consum_Stairs 				"Stairs" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
+	Number consum_Bench					"Bench" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_dimmer:Kitchen_Bench:activeEnergy" }
+	Number consum_track					"Track Spots" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_track:activeEnergy" }
+	Number consum_Strip					"Beam" 					(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Strip:activeEnergy" }
+	Number consum_Garden			"Planter Box" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen_Garden_Lights:activeEnergy" }
 	
 		// Bedroom/Ensuite
 	
-	Number consum_light_Stairs "Stairs" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
-	Number consum_Bedroom_Plant "Panter Box" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bedroom_Plant:activeEnergy" }
-	Number consum_Coms_cupboard "Cupboard" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Cupboard:activeEnergy" }
-	Number consum_Bedroom "Bedroom GPO" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bedroom:activeEnergy" }
-	Number consum_Vanity "Vanity GPO" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Vanity:activeEnergy" }
-	Number consum_Bathroom "Bathroom GPO" (gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bathroom_Power:activeEnergy" }
+	Number consum_Stairs 			"Stairs" 				(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Stairs:activeEnergy" }
+	Number consum_Bedroom_Plant 		"Panter Box" 			(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bedroom_Plant:activeEnergy" }
+	Number consum_Coms_cupboard 		"Cupboard" 				(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Cupboard:activeEnergy" }
+	Number consum_Bedroom 				"Bedroom GPO"		 	(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bedroom:activeEnergy" }
+	Number consum_Vanity 				"Vanity GPO" 			(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Vanity:activeEnergy" }
+	Number consum_Bathroom_gpo			"Bathroom GPO" 			(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:Bathroom_gpo:activeEnergy" }
 	
 	// Library/Stairs
 	
-	Number consum_light_Stairs "Stairs" (gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
-	Number consum_Glass_Wall "Glass Wall GPO" (gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
-	Number consum_Glass_Wall_2 "Glass Wall 2 GPO" (gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
-	Number consum_Library "Library" (gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Library:activeEnergy" }
+	Number consum_Stairs 			"Stairs" 				(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Stairs:activeEnergy" }
+	Number consum_Glass_Wall 			"Glass Wall GPO" 		(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
+	Number consum_Glass_Wall2 			"Glass Wall 2 GPO" 		(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Glass_Wall:activeEnergy" }
+	Number consum_Library 				"Library" 				(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:Library:activeEnergy" }
 	
 	
 	// Roof Deck
 	
-	Number consum_light_Stairs "Stairs" (gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
-	Number consum_Stairs_Roof "Deck Stairs" (gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_dimmer:Stairs_Roof:activeEnergy" }
-	Number consum_Spa "Spa" (gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Spa:activeEnergy" }
-	Number consum_Roof_Top "Bar Fridge" (gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Roof_Top:activeEnergy" }
-	Number consum_Roof_BBQ "BBQ" (gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Roof_BBQ:activeEnergy" }
+	Number consum_Stairs 			"Stairs" 				(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:light_Stairs:activeEnergy" }
+	Number consum_Stairs_Roof 			"Deck Stairs" 			(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_dimmer:Stairs_Roof:activeEnergy" }
+	Number consum_Spa 					"Spa" 					(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Spa:activeEnergy" }
+	Number consum_Roof_Top 				"Bar Fridge" 			(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Roof_Top:activeEnergy" }
+	Number consum_Roof_BBQ 				"BBQ" 					(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:Roof_BBQ:activeEnergy" }
 
 
 

@@ -12,60 +12,60 @@ Group:Number:SUM gPowerRooftop		"Roof Deck"	(gPower)
 
 // Garage/Office	
 	
-	Number power_light_Stairs "Stairs" (gPowerGarage) [ "Power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
-	Number power_Garage_Strip_Lights "Beam" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Garage_Strip_Lights:activePower" }
-	Number power_Garage_Shower_Lights "Shower/Toilet" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onff:Garage_Shower_Lights:activePower" }
-	Number power_Garage_Track_Ligths "Track Spots" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Garage_Track_Ligths:activePower" }
-	Number power_Cupboard "Office" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Office_Cupboard:activePower" }
-	Number power_Laundry "Laundry GPO 1" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Laundry:activePower" }
-	Number power_Laundry_2 "Laundry GPO 2" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Laundry_2:activePower" }
-	Number power_Entrance "Entry" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Entrance:activePower" }
-	Number power_FCU "Ventilation" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Cooler:activePower" }
-	Number power_Office "Office GPO" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Office:activePower" }
-	Number power_Garage "Garage GPO" (gPowerGarage) [ "power" ] { channel="mox:1_gang_onoff:Garage:activePower" }
+	Number power_Stairs         		"Stairs" 	(gPowerGarage) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Stairs:activePower" }
+	Number power_Garage_Strip			"Beam" 		(gPowerGarage) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Garage_Strip:activePower" }
+	Number power_Garage_Shower			"Shower/Toilet" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onff:Garage_Shower:activePower" }
+	Number power_Garage_Track			"Track Spots" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Garage_Track:activePower" }
+	Number power_Cupboard 				"Office" 	(gPowerGarage) [ "power" ] 		{ channel="mox:1_gang_onoff:Office_Cupboard:activePower" }
+	Number power_Laundry 				"Laundry GPO 1" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Laundry:activePower" }
+	Number power_Laundry_2 				"Laundry GPO 2" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Laundry_2:activePower" }
+	Number power_Entrance 				"Entry" 	(gPowerGarage) [ "power" ] 		{ channel="mox:1_gang_onoff:Entrance:activePower" }
+	Number power_FCU				 	"Ventilation" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Cooler:activePower" }
+	Number power_Office 				"Office GPO" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Office:activePower" }
+	Number power_Garage 				"Garage GPO" (gPowerGarage) [ "power" ] 	{ channel="mox:1_gang_onoff:Garage:activePower" }
 	
 	
 	// Kitchen/Living
 	
-	Number power_Tv_Area "Tv Aerea GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Tv_Area:activePower" }
-	Number power_Glass_Wall (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall:activePower" }
-	Number power_Glass_Wall_2 (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall_2:activePower" }
-	Number power_Range_Hood "Range Hood GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Range_Hood:activePower" }
-	Number power_Side_Bench "Side Bench GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Side_Bench:activePower" }
-	Number power_Tv_Area_2 "Tv Aerea 2 GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Tv_Area_2:activePower" }
-	Number power_Kitchen_Bench "Kitchen Bench GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Bench:activePower" }
-	Number power_Under_Sink "Under the Sink GPO" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Under_Sink:activePower" }
-	Number power_Dishwasher "Dishwasher" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Dishwasher:activePower" }
-	Number power_Cooler "Cooler" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Cooler:activePower" }
-	Number power_light_Stairs "Stairs" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
-	Number power_Bench_Ligths "Bench" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_dimmer:Kitchen_Bench_Ligths:activePower" }
-	Number power_track_light "Track Spots" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_track_Lights:activePower" }
-	Number power_Strip_light "Beam" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Strip_Lights:activePower" }
-	Number power_Garden_light "Planter Box" (gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Garden_Lights:activePower" }
+	Number power_Tv_Area 				"Tv Aerea GPO" 			(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Tv_Area:activePower" }
+	Number power_Glass_Wall 			"Glass Wall" 			(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall:activePower" }
+	Number power_Glass_Wall2 			"Glass Wall 2 " 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall2:activePower" }
+	Number power_Range_Hood 			"Range Hood GPO" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Range_Hood:activePower" }
+	Number power_Side_Bench 			"Side Bench GPO" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Side_Bench:activePower" }
+	Number power_Tv_Area_2 				"Tv Aerea 2 GPO" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Tv_Area_2:activePower" }
+	Number power_Kitchen_Bench 			"Kitchen Bench GPO" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Bench:activePower" }
+	Number power_Under_Sink 			"Under the Sink GPO" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Under_Sink:activePower" }
+	Number power_Dishwasher 			"Dishwasher" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Dishwasher:activePower" }
+	Number power_Cooler 				"Cooler" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Cooler:activePower" }
+	Number power_light_Stairs 			"Stairs" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Stairs:activePower" }
+	Number power_Bench					"Bench" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Bench:activePower" }
+	Number power_track 					"Track Spots" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_track:activePower" }
+	Number power_Strip 					"Beam" 			(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:Kitchen_Strip:activePower" }
+	Number power_Garden 				"Planter Box" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_dimmer:Kitchen_Garden:activePower" }
 	
 	
 	// Bedroom/Ensuite
 	
-	Number power_light_Stairs "Stairs" (gBedroom) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
-	Number power_Bedroom_Plant "Panter Box" (gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Bedroom_Plant:activePower" }
-	Number power_Coms_cupboard "Cupboard" (gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Cupboard:activePower" }
-	Number power_Bedroom "Bedroom GPO" (gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Bedroom:activePower" }
-	Number power_Vanity "Vanity GPO" (gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Vanity:activePower" }
-	Number power_Bathroom "Bathroom GPO" (gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Bathroom_Power:activePower" }
+	Number power_Stairs 				"Stairs" 		(gBedroom) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
+	Number power_Bedroom_Plant 			"Panter Box" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_dimmer:Bedroom_Plant:activePower" }
+	Number power_Coms_cupboard 			"Cupboard" 		(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Cupboard:activePower" }
+	Number power_Bedroom 				"Bedroom GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Bedroom:activePower" }
+	Number power_Vanity 				"Vanity GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Vanity:activePower" }
+	Number power_Bathroom 				"Bathroom GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:Bathroom_gpo:activePower" }
 	
 	
 	// Library/Stairs
 	
-	Number power_light_Stairs "Stairs" (gLibrary) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
-	Number power_Glass_Wall "Glass Wall GPO" (gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall:activePower" }
-	Number power_Glass_Wall_2 "Glass Wall 2 GPO" (gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall:activePower" }
-	Number power_Library "Library" (gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Library:activePower" }
+	Number power_Stairs 				"Stairs" 			(gLibrary) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
+	Number power_Glass_Wall 			"Glass Wall GPO" 	(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall:activePower" }
+	Number power_Glass_Wall2 			"Glass Wall 2 GPO" 	(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Glass_Wall2:activePower" }
+	Number power_Library 				"Library" 			(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:Library:activePower" }
 	
 	
 	// Roof Deck
 	
-	Number power_light_Stairs "Stairs" (gRooftop) [ "power" ] { channel="mox:1_gang_onoff:light_Stairs:activePower" }
-	Number power_Stairs_Roof "Deck Stairs" (gPowerRooftop) [ "power" ] { channel="mox:1_gang_dimmer:Stairs_Roof:activePower" }
-	Number power_Spa "Spa" (gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Spa:activePower" }
-	Number power_Roof_Top "Bar Fridge" (gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Roof_Top:activePower" }
-	Number power_Roof_BBQ "BBQ" (gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Roof_BBQ:activePower" }
+	Number power_Stairs 				"Stairs" 			(gRooftop) [ "power" ] { channel="mox:1_gang_onoff:Stairs:activePower" }
+	Number power_Stairs_Roof 			"Deck Stairs" 		(gPowerRooftop) [ "power" ] { channel="mox:1_gang_dimmer:Stairs_Roof:activePower" }
+	Number power_Spa 					"Spa" 				(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Spa:activePower" }
+	Number power_Roof_Top 				"Bar Fridge" 		(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Roof_Top:activePower" }
+	Number power_Roof_BBQ 				"BBQ" 				(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:Roof_BBQ:activePower" }

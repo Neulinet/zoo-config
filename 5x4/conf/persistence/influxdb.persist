@@ -1,7 +1,13 @@
 Strategies {
 	everyMinute : "0 * * * * ?"
+	default = everyChange, everyMinute
 }
 
 Items {
-	gConsumptions* : strategy = everyChange, everyMinute
+	gConsumptions*
+	gConsumGarage
+	gConsumKitchen
+	gConsumBedroom	
+	gConsumLibrary
+	gConsumRooftop	
 }

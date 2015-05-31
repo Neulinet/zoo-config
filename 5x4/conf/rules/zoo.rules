@@ -1,11 +1,11 @@
 
-rule "Fridge Power sum"
+rule "Cooler Power sum"
 when
-	Item Fridge_kWh changed
+	Item Cooler_kWh changed
 then
 	var Number consumptionDelta = Fridge_kWh.state - previousState
 	postUpdate(Fridge_kWh_week, Fridge_kWh_week.state + (consumptionDelta as DecimalType))
-	logInfo("Fridge kWh increased by " + consumptionDelta)
+	logInfo("Cooler kWh increased by " + consumptionDelta)
 end
 
 
