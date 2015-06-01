@@ -50,7 +50,7 @@ Switch power_Under_Sink 	"Under the Sink GPO"	(gKitchen) 	[ "power" ] 	{ channel
 Switch power_Dishwasher 	"Dishwasher" 		(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Dishwasher:state" }
 Switch power_Cooler 		"Cooler" 		(gKitchen) 	[ "power" ] 	{ channel="mox:1_gang_onoff:Cooler:state" }
 Switch light_Stairs			"Stairs"		(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Stairs:state" }
-Dimmer light_Kitchen_Bench:	"Bench"			(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Kitchen_Bench:state" }
+Dimmer light_Kitchen_Bench	"Bench"			(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Kitchen_Bench:state" }
 Switch light_Kitchen_track	"Track Spots"		(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Kitchen_track:state" }
 Switch light_Kitchen_Strip	"Beam"			(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Kitchen_Strip:state" }
 Switch light_Kitchen_Garden	"Planter Box"		(gKitchen) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:Kitchen_Garden:state" }
