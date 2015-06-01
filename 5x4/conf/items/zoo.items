@@ -24,7 +24,7 @@ Group:Switch:OR(ON, OFF) gRooftop 	"Roof Deck" 		(gRooms) [ "home-group", "room"
 
 // Garage/Office
 
-Switch light_Stairs		"Stairs"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Stairs:state" }
+Switch light_stairs		"Stairs"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:stairs:state" }
 Switch light_Garage_Strip		"Beam"		(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Garage_Strip:state" }
 Switch light_Garage_Shower		"Shower/Toilet"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onff:Garage_Shower:state" }
 Switch light_Garage_Track		"Track Spots"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:Garage_Track:state" }
