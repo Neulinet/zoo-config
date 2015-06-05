@@ -92,8 +92,8 @@ Switch power_dining1 "Dining Outlet" (gDining)	[ "power" ] { channel="mox:1_gang
 
 //Master
 Switch light_master_bed   "Master Bed"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:master_bed:state" }
-Switch light_walking_robe  "Robe"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:walking_robe:state" }
-Dimmer light_ensuite   "Ensuite"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_dimmer:ensuite:state" }
+Switch light_walking_robe  "Robe"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:walking_robe:state" }
+Switch light_ensuite   "Ensuite"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:ensuite:state" }
 Switch light_mirror   "Mirror"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:mirror:state" }
 Switch light_fan   "Fan"	(gMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:state" }
 Switch light_east_deck   "East Deck"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:east_deck:state" }

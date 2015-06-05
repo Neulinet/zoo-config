@@ -1,4 +1,3 @@
-
 // Power
 
 Group:Number:SUM gPower		"Power Active" (gZooPower) [ "home-group" ]
@@ -63,7 +62,7 @@ Number power_outlet_entert2 "Enterteinement 2" 		[ "power" ] { channel="mox:1_ga
 Number power_Round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:Round_power_box:activePower" }	
 			
 // Kitchen 			
-Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:Kitchen:activePower" }	
+Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:kitchen:activePower" }	
 Number power_outlet_kitchen "Kitchen Outlet" 	(gPowerKitchen ) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:activePower" }	
 			
 // Dinning			
@@ -73,7 +72,7 @@ Number power_outlet_dining  "Dining" 	(gPowerDining ) 	[ "power" ] { channel="mo
 //Master			
 Number power_Master_bed   "Master Bed"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:Master_bed:activePower" }	
 Number power_walking_robe   "Walking"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:walking_robe:activePower" }	
-Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_dimmer:ensuite:activePower" }	
+Number power_ensuite   "Ensuite"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:ensuite:activePower" }	
 Number power_mirror   "Mirror"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:mirror:activePower" }	
 Number power_fan   "Fan"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:fan:activePower" }	
 Number power_east_deck   "East Deck"	(gPowerMaster ) 	 [ "power" ] { channel="mox:1_gang_onoff:east_deck:activePower" }	
