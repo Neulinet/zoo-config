@@ -21,7 +21,7 @@ Number consum_light_studio_back "Back" 		(gConsumStudio) [ "consumption" ] { cha
 
 Number consum_light_ralph_bed "Bed"	 		(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_dimmer:ralph_bed:activeEnergy" }
 Number consum_outlet_ralph_bed1 "Bed Outlet 1"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed1:activeEnergy" }
-Number consum_outlet_ralph_bed1 "Bed Outlet 2"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed2:activeEnergy" }
+Number consum_outlet_ralph_bed2 "Bed Outlet 2"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed2:activeEnergy" }
 
 Number consum_light_office "Office"	 		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:office:activeEnergy" }
 Number consum_outlet_office1 "Office Outlet 1"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office1:activeEnergy" }

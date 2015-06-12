@@ -6,6 +6,9 @@ Group gZooPowerMonth
 
 Group gRooms
 
+// items that must be initialized after a openhab start
+Group gInit
+
 DateTime billPeriod_start
 DateTime billPeriod_end
 
@@ -18,12 +21,12 @@ Group:Switch:OR(ON, OFF) gRalph 	"Ralph" 	(gRooms) [ "home-group", "room", "mast
 Group:Switch:OR(ON, OFF) gEntry 	"Entry" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gCellar 	"Cellar" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gBath 		"Bathroom" 	(gRooms) [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) gLaundry "Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gLaundry   "Laundry" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gStairs 	"Stairs" 	(gRooms) [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) gExterior "Exterior" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gExterior  "Exterior" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gDining 	"Dining" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gMaster	"Master" 	(gRooms) [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) gKitchen "Kitchen" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gKitchen   "Kitchen" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gLiving	"Living" 	(gRooms) [ "home-group", "room", "master-switch" ]
 
 
@@ -35,34 +38,34 @@ Dimmer light_studio_back "Back" 	(gStudio) 	 [ "light" ] { channel="mox:1_gang_d
 
 // Down stairs Bed 
 Dimmer light_ralph_bed "Bed"	 	(gRalph) 	 [ "light" ] { channel="mox:1_gang_dimmer:ralph_bed:state" }
-Switch power_ralph_bed1 "Bed 1"	(gRalph) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph1:state" } 
-Switch power_ralph_bed2 "Bed 2"	(gRalph) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph2:state" } 
+Switch power_ralph_bed1 "Bed 1"	(gRalph, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph1:state" } 
+Switch power_ralph_bed2 "Bed 2"	(gRalph, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph2:state" } 
 
 // Office
 Dimmer light_office "Office Light"	 	(gOffice) 	 [ "light" ] { channel="mox:1_gang_dimmer:office:state" }
-Switch power_office1 "Office Outlet 1"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office1:state" }
-Switch power_office2 "Office Outlet 2"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office2:state" } 
-Switch power_office3 "Office Outlet 3"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office3:state" } 
-Switch power_office4 "Office Outlet 4"	(gOffice) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office4:state" } 
+Switch power_office1 "Office Outlet 1"	(gOffice, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office1:state" }
+Switch power_office2 "Office Outlet 2"	(gOffice, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office2:state" } 
+Switch power_office3 "Office Outlet 3"	(gOffice, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office3:state" } 
+Switch power_office4 "Office Outlet 4"	(gOffice, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office4:state" } 
 
 // Entry 
 Dimmer light_entry "Entry Light"	 		(gEntry) 	 [ "light" ] { channel="mox:1_gang_dimmer:entry:state" }
-Switch power_entry1 "Entry Outlet 1"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:state" } 
-Switch power_entry2 "Entry Outlet 2"		(gEntry)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
+Switch power_entry1 "Entry Outlet 1"		(gEntry, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:state" } 
+Switch power_entry2 "Entry Outlet 2"		(gEntry, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
 
 // Cellar
 Dimmer light_cellar "Cellar"	 	(gCellar) 	 [ "light" ] { channel="mox:1_gang_dimmer:cellar:state" }
 
 // Laundry 
 Switch light_laundry "Laundry Lights and Fan"	(gLaundry) 	 ["light"] { channel="mox:1_gang_onoff:laundry:state" }
-Switch power_laundry	"Laundry Power"	(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:state" } 
-Switch power_laundry_fan		"Washer and Dryer"		(gLaundry) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:state" }
+Switch power_laundry	"Laundry Power"	(gLaundry, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry1:state" } 
+Switch power_laundry_fan		"Washer and Dryer"		(gLaundry, gInit) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_laundry2:state" }
 
 // 1st floor bathroom 
 Switch light_bath_mirror "Mirror"	(gBath) 	[ "light" ] { channel="mox:1_gang_onoff:bath_mirror:state" } 
 Switch light_bath_fan "Fan"			(gBath) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
 Dimmer light_bath "Ceiling"			(gBath) 	[ "light" ] { channel="mox:1_gang_dimmer:bath:state" } 
-Switch power_bath_main "Bath Outlet" (gBath)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
+Switch power_bath_main "Bath Outlet" (gBath, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
 
 // Stairs
 Switch light_stairs_2nd     "Stairs"	(gStairs ) 	 [ "light" ] { channel="mox:1_gang_onoff:stairs_2nd:state" }
@@ -78,17 +81,17 @@ Switch light_west_deck     "West Deck"	(gLiving ) 	 [ "light" ] { channel="mox:1
 
 // Lounge
 Switch light_lounge    "Lounge"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:lounge:state" }
-Switch power_entert1 "Enterteinement 1" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
-Switch power_entert2 "Enterteinement 2" (gLiving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
+Switch power_entert1 "Entertainement 1" (gLiving, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
+Switch power_entert2 "Entertainement 2" (gLiving, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
 Dimmer light_Round_light_box   "Light Box"	(gLiving ) 	 [ "light" ] { channel="mox:1_gang_onoff:round_light_box:state" }
 
 // Kitchen 
 Switch light_kitchen   "Kitchen"	(gKitchen ) 	 [ "light" ] { channel="mox:1_gang_onoff:kitchen:state" }
-Switch power_kitchen "Kitchen Outlet" (gKitchen)	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:state" }
+Switch power_kitchen "Kitchen Outlet" (gKitchen, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_kitchen:state" }
 
 // Dinning
 Switch light_dining   "Dining"	(gDining ) 	 [ "light" ] { channel="mox:1_gang_onoff:dining:state" }
-Switch power_dining1 "Dining Outlet" (gDining)	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:state" }
+Switch power_dining1 "Dining Outlet" (gDining, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_dining:state" }
 
 //Master
 Switch light_master_bed   "Master Bed"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:master_bed:state" }
@@ -97,9 +100,9 @@ Switch light_ensuite   "Ensuite"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_
 Switch light_mirror   "Mirror"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:mirror:state" }
 Switch light_fan   "Fan"	(gMaster ) 	 [ "fan" ] { channel="mox:1_gang_onoff:fan:state" }
 Switch light_east_deck   "East Deck"	(gMaster ) 	 [ "light" ] { channel="mox:1_gang_onoff:east_deck:state" }
-Switch power_master "Master outlet 1"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:state" }
-Switch power_master2 "Master outlet 2"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:state" }
-Switch power_master3 "Master outlet 3"  (gMaster)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:state" }
+Switch power_master "Master outlet 1"  (gMaster, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master:state" }
+Switch power_master2 "Master outlet 2"  (gMaster, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master2:state" }
+Switch power_master3 "Master outlet 3"  (gMaster, gInit)	[ "power" ] { channel="mox:1_gang_onoff:outlet_master3:state" }
 
 
 
