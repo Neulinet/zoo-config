@@ -9,5 +9,6 @@ Items {
 	gConsumKitchen
 	gConsumBedroom	
 	gConsumLibrary
-	gConsumRooftop	
+	gConsumRooftop
+	gConsumStairs
 }
