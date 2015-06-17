@@ -55,10 +55,10 @@ Number power_ext_entry     "Entry"	(gPowerExterior ) 	 [ "power" ] { channel="mo
 Number power_west_deck     "West Deck"	(gPowerLivingPower ) 	 [ "power" ] { channel="mox:1_gang_onoff:west_deck:activePower" }	
 			
 // Launge			
-Number power_launge    "Launge"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:launge:activePower" }	
+Number power_lounge    "Lounge"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:lounge:activePower" }	
 Number power_outlet_entert1 "Enterteinement 1"	(gPowerliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:activePower" }	
 Number power_outlet_entert2 "Enterteinement 2" 	(gPowerliving)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:activePower" }	
-Number power_round_light_box   "Light Box"	(gPowerLiving ) 	 [ "power" ] { channel="mox:1_gang_onoff:round_power_box:activePower" }	
+Number power_round_light_box   "Light Box"	(gPowerLiving ) [ "power" ] { channel="mox:1_gang_onoff:round_light_box:activePower" }	
 			
 // Kitchen 			
 Number power_Kitchen   "Kitchen"	(gPowerKitchen ) 	 [ "power" ] { channel="mox:1_gang_onoff:kitchen:activePower" }	
