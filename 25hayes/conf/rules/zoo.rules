@@ -14,8 +14,8 @@ then
     try {
         createTimer(now.plusSeconds(60)) [|
             // Initializing members
-            gPowerDef?.members.forEach[ powerItem | postUpdate(powerItem, ON)]
-			gLightDef?.members.forEach[ powerItem | postUpdate(powerItem, OFF)]
+            gPowerDef?.members.forEach[ powerItem | sendCommand(powerItem, ON)]
+			gLightDef?.members.forEach[ powerItem | sendCommand(powerItem, OFF)]
             ] 
         } 
         finally{
