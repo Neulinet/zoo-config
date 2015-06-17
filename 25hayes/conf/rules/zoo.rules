@@ -24,6 +24,13 @@ then
         
 end
 
+rule "Entrance security"
+when
+	Item light_ext_north1 changed to OFF
+then
+	sendCommand(light_ext_north1, ON)
+end
+
 rule "Fridge Power sum"
 when
 	Item Fridge_kWh changed
