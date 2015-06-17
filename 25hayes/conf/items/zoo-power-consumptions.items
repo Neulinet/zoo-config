@@ -10,10 +10,10 @@ Group:Number:SUM gConsumLaundry		"Laundry"	(gConsumptions)
 Group:Number:SUM gConsumBath		"Bath"		(gConsumptions)
 Group:Number:SUM gConsumUpStairs	"Upstairs"      (gConsumptions)
 Group:Number:SUM gConsumExterior	"Exterior"      (gConsumptions)
-Group:Number:SUM gConsumDining 		"Dining" 	(gCosumptions)
-Group:Number:SUM gConsumMaster 		"Master" 	(gCosumptions)
-Group:Number:SUM gConsumKitchen 	"Kitchen" 	(gCosumptions)
-Group:Number:SUM gConsumLiving 		"Living" 	(gCosumptions)
+Group:Number:SUM gConsumDining 		"Dining" 	(gConsumptions)
+Group:Number:SUM gConsumMaster 		"Master" 	(gConsumptions)
+Group:Number:SUM gConsumKitchen 	"Kitchen" 	(gConsumptions)
+Group:Number:SUM gConsumLiving 		"Living" 	(gConsumptions)
 
 
 Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { channel="mox:1_gang_dimmer:studio_front:activeEnergy" }
