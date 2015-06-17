@@ -20,8 +20,8 @@ Number consum_light_studio_front "Front"	(gConsumStudio)  [ "consumption" ] { ch
 Number consum_light_studio_back "Back" 		(gConsumStudio) [ "consumption" ] { channel="mox:1_gang_dimmer:studio_back:activeEnergy" }
 
 Number consum_light_ralph_bed "Bed"	 		(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_dimmer:ralph_bed:activeEnergy" }
-Number consum_outlet_ralph_bed1 "Bed Outlet 1"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed1:activeEnergy" }
-Number consum_outlet_ralph_bed2 "Bed Outlet 2"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:ralph_bed2:activeEnergy" }
+Number consum_outlet_ralph1 "Bed Outlet 1"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_ralph1:activeEnergy" }
+Number consum_outlet_ralph2 "Bed Outlet 2"	(gConsumRalph) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_ralph2:activeEnergy" }
 
 Number consum_light_office "Office"	 		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_dimmer:office:activeEnergy" }
 Number consum_outlet_office1 "Office Outlet 1"		(gConsumOffice) [ "consumption" ] { channel="mox:1_gang_onoff:outlet_office1:activeEnergy" }
@@ -62,15 +62,15 @@ Number consum_outlet_entert2 "Enterteinement 2" (gConsumLiving )		[ "consumption
 Number consum_round_light_box   "Light Box"	(gConsumLiving ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:round_power_box:activeEnergy" }
 		
 // Kitchen 		
-Number consum_Kitchen   "Kitchen"	(gConsumKitchen ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen:activeEnergy" }
+Number consum_kitchen   "Kitchen"	(gConsumKitchen ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:Kitchen:activeEnergy" }
 Number consum_outlet_kitchen "Kitchen Outlet" 	(gConsumKitchen ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_kitchen:activeEnergy" }
 		
 // Dinning		
 Number consum_dining   "Dining"	(gConsumDining ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:dining:activeEnergy" }
-Number consum_outlet_dining "Dining"	(gConsumDining ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_dining:activeEnergy" }
+Number consum_outlet_dining "Dining Outlet"	(gConsumDining ) 	[ "consumption" ] { channel="mox:1_gang_onoff:outlet_dining:activeEnergy" }
 		
 //Master		
-Number consum_Master_bed   "Master Bed"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:master_bed:activeEnergy" }
+Number consum_master_bed   "Master Bed"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:master_bed:activeEnergy" }
 Number consum_walking_robe   "Walking"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:walking_robe:activeEnergy" }
 Number consum_ensuite   "Ensuite"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:ensuite:activeEnergy" }
 Number consum_mirror   "Mirror"	(gConsumMaster ) 	 [ "consumption" ] { channel="mox:1_gang_onoff:mirror:activeEnergy" }
