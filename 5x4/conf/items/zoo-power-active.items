@@ -1,4 +1,3 @@
-
 // Power
 
 Group:Number:SUM gPower		"Power Active" (gZooPower) [ "home-group" ]
@@ -7,7 +6,7 @@ Group:Number:SUM gPowerKitchen		"Kitchen/Living"	(gPower)
 Group:Number:SUM gPowerBedroom		"Bedroom/Ensuite"	(gPower)
 Group:Number:SUM gPowerLibrary		"Library"	(gPower)
 Group:Number:SUM gPowerRooftop		"Roof Deck"	(gPower)
-Gropu:Number:SUM gPowerStairs		"Stairs"	(gPower)
+Group:Number:SUM gPowerStairs		"Stairs"	(gPower)
 
 
 	// Stairs	

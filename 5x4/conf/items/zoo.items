@@ -7,7 +7,8 @@ Group gZooPowerMonth
 Group gRooms
 
 // items that must be initialized after a openhab start
-Group gInit
+Group gPowerDef
+Group gLightDef
 
 DateTime billPeriod_start
 DateTime billPeriod_end
@@ -31,58 +32,58 @@ Switch light_stairs             "Stairs"        (gStairs)       [ "light" ]     
 
 // Garage/Office
 
-Switch light_garage_strip		"Beam"		(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:garage_strip:state" }
-Switch light_garage_track		"Track Spots"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:garage_track:state" }
-Switch light_cupboard			"Office"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:office_cupboard:state" }
-Switch light_laundry 			"Laundry Light"	(gGarage) 	[ "light" ] 	{ channel="mox:1_gang_onoff:laundry:state" }
-Switch light_toilet                     "Toilet/Shower"         (gGarage)       [ "light" ]     { channel="mox:1_gang_onoff:toilet:state" }
-Switch power_laundry_1			"Laundry GPO 1" (gGarage, gInit)	[ "power" ]	{ channel="mox:1_gang_onoff:laundry_1:state" }
-Switch power_laundry_2			"Laundry GPO 2"	(gGarage, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:laundry_2:state" }
-Switch power_entrance 			"Entry"		(gGarage, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:entrance:state" }
-Switch power_fcu			"Ventilation"	(gGarage, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:fcu:state" }
-Switch power_office			"Office GPO"	(gGarage, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:office:state" }
-Switch power_garage 			"Garage GPO"	(gGarage, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:garage:state" }
+Switch light_garage_strip		"Beam"		(gGarage, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:garage_strip:state" }
+Switch light_garage_track		"Track Spots"	(gGarage, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:garage_track:state" }
+Switch light_cupboard			"Office"	(gGarage, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:office_cupboard:state" }
+Switch light_laundry 			"Laundry Light"	(gGarage, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:laundry:state" }
+Switch light_toilet                     "Toilet/Shower"         (gGarage, gLightDef)       [ "light" ]     { channel="mox:1_gang_onoff:toilet:state" }
+Switch power_laundry_1			"Laundry GPO 1" (gGarage, gPowerDef)	[ "power" ]	{ channel="mox:1_gang_onoff:laundry_1:state" }
+Switch power_laundry_2			"Laundry GPO 2"	(gGarage, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:laundry_2:state" }
+Switch power_entrance 			"Entry"		(gGarage, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:entrance:state" }
+Switch power_fcu			"Ventilation"	(gGarage, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:fcu:state" }
+Switch power_office			"Office GPO"	(gGarage, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:office:state" }
+Switch power_garage 			"Garage GPO"	(gGarage, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:garage:state" }
 
 
 // Kitchen/Living
 
-Switch light_kitchen_bench      "Bench"                 (gKitchen)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_bench:state" }
-Switch light_kitchen_track      "Track Spots"           (gKitchen)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_track:state" }
-Switch light_k_beam             "Beam"                  (gKitchen)      [ "light" ]     { channel="mox:1_gang_onoff:k_beam:state" }
-Dimmer light_kitchen_garden     "Planter Box"           (gKitchen)      [ "light" ]     { channel="mox:1_gang_dimmer:kitchen_garden:state" }
-Switch power_tv_Area 		"Tv Aerea GPO"		(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:tv_area:state" }
-Switch power_range_hood 	"Range Hood GPO" 	(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:range_hood:state" }
-Switch power_side_bench 	"Side Bench GPO" 	(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:side_bench:state" }
-Switch power_tv_area_2 		"Tv Aerea 2 GPO" 	(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:tv_area_2:state" }
-Switch power_kitchen_bgpo 	"Kitchen Bench GPO" 	(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:kitchen_bgpo:state" } 
-Switch power_under_sink 	"Under the Sink GPO"	(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:under_sink:state" }
-Switch power_dishwasher 	"Dishwasher" 		(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:dishwasher:state" }
-Switch power_cooler 		"Cooler" 		(gKitchen, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:cooler:state" }
+Switch light_kitchen_bench      "Bench"                 (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_bench:state" }
+Switch light_kitchen_track      "Track Spots"           (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_track:state" }
+Switch light_k_beam             "Beam"                  (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:k_beam:state" }
+Dimmer light_kitchen_garden     "Planter Box"           (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_dimmer:kitchen_garden:state" }
+Switch power_tv_Area 		"Tv Aerea GPO"		(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:tv_area:state" }
+Switch power_range_hood 	"Range Hood GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:range_hood:state" }
+Switch power_side_bench 	"Side Bench GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:side_bench:state" }
+Switch power_tv_area_2 		"Tv Aerea 2 GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:tv_area_2:state" }
+Switch power_kitchen_bgpo 	"Kitchen Bench GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:kitchen_bgpo:state" } 
+Switch power_under_sink 	"Under the Sink GPO"	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:under_sink:state" }
+Switch power_dishwasher 	"Dishwasher" 		(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:dishwasher:state" }
+Switch power_cooler 		"Cooler" 		(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:cooler:state" }
 
 
 // Bedroom/Ensuite
 
-Dimmer light_bedroom_plant	"Planter Box"	(gBedroom) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:bedroom_plant:state" }
-Switch light_toilet_nite    "Toilet nite"   (gBedroom)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_nite:state" }
-Switch light_toilet_lum     "Shower light"  (gBedroom)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_lum:state" }
-Switch light_bedroom_beam   "Beam"          (gBedroom)      [ "light" ]     { channel="mox:1_gang_onoff:bedroom_beam:state" }
-Switch power_cupboard_room	"Cupboard"	    (gBedroom, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:cupboard:state" }
-Switch power_bedroom		"Bedroom GPO"	(gBedroom, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:bedroom:state" }
-Switch power_vanity		    "Vanity GPO"	(gBedroom, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:vanity:state" }
-Switch power_bathroom		"Bathroom GPO" 	(gBedroom, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:bathroom_gpo:state" }
+Dimmer light_bedroom_plant	"Planter Box"	(gBedroom, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:bedroom_plant:state" }
+Switch light_toilet_nite    "Toilet nite"   (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_nite:state" }
+Switch light_toilet_lum     "Shower light"  (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_lum:state" }
+Switch light_bedroom_beam   "Beam"          (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:bedroom_beam:state" }
+Switch power_cupboard_room	"Cupboard"	    (gBedroom, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:cupboard:state" }
+Switch power_bedroom		"Bedroom GPO"	(gBedroom, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:bedroom:state" }
+Switch power_vanity		    "Vanity GPO"	(gBedroom, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:vanity:state" }
+Switch power_bathroom		"Bathroom GPO" 	(gBedroom, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:bathroom_gpo:state" }
 
 
 // Library
 
-Switch power_glass_wall		"Glass Wall GPO"	(gLibrary, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:glass_wall:state" }
-Switch power_glass_wall_2	"Glass Wall 2 GPO"	(gLibrary, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:glass_wall_2:state" }
-Switch power_library		"Library"		    (gLibrary, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:library:state" }
+Switch power_glass_wall		"Glass Wall GPO"	(gLibrary, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:glass_wall:state" }
+Switch power_glass_wall_2	"Glass Wall 2 GPO"	(gLibrary, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:glass_wall_2:state" }
+Switch power_library		"Library"		    (gLibrary, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:library:state" }
 
 
 // Roof Deck
 	
-Dimmer light_stairs_roof	"Deck Stairs" 	(gRooftop) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:stairs_roof:state" }
-Switch light_roof_top_beam	"Beam"		    (gRooftop)	[ "light" ]	{ channel="mox:1_gang_onoff:roof_top_beam:state" }
-Switch power_spa		    "Spa"			(gRooftop, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:spa:state" }
-Switch power_roof_top		"Bar Fridge"	(gRooftop, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:roof_top:state" }
-Switch power_roof_bbq		"BBQ"			(gRooftop, gInit) 	[ "power" ] 	{ channel="mox:1_gang_onoff:roof_bbq:state" }
+Dimmer light_stairs_roof	"Deck Stairs" 	(gRooftop, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:stairs_roof:state" }
+Switch light_roof_top_beam	"Beam"		    (gRooftop, gLightDef)	[ "light" ]	{ channel="mox:1_gang_onoff:roof_top_beam:state" }
+Switch power_spa		    "Spa"			(gRooftop, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:spa:state" }
+Switch power_roof_top		"Bar Fridge"	(gRooftop, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:roof_top:state" }
+Switch power_roof_bbq		"BBQ"			(gRooftop, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:roof_bbq:state" }
