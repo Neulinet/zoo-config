@@ -59,7 +59,7 @@ mox:1_gang_onoff:outlet_entert2 [ oid=304 ]
 mox:1_gang_onoff:outlet_kitchen [ oid=338 ]
 mox:1_gang_onoff:outlet_dining [ oid=381 ]
 mox:1_gang_onoff:outlet_master [ oid=341 ]
-mox:1_gang_onoff:outlet_master2 [ oid=342 ]
+mox:1_gang_onoff:outlet_master2 [ oid= ]
 mox:1_gang_onoff:outlet_master3 [ oid=343 ]
 
 
