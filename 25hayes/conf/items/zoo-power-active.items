@@ -20,8 +20,8 @@ Number power_light_studio_front "Front" (gPowerStudio) [ "power" ] { channel="mo
 Number power_light_studio_back "Back" (gPowerStudio)  [ "power" ] { channel="mox:1_gang_dimmer:studio_back:activePower" }
 // Ralphs Room
 Number power_light_ralph_bed "Bed"	 		(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_dimmer:ralph_bed:activePower" }
-Number power_outlet_ralph1 "Bed Outlet 1"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:ralph1:activePower" }
-Number power_outlet_ralph2 "Bed Outlet 2"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:ralph2:activePower" }
+Number power_outlet_ralph1 "Bed Outlet 1"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph1:activePower" }
+Number power_outlet_ralph2 "Bed Outlet 2"	(gPowerRalph) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph2:activePower" }
 // Office
 Number power_light_office "Office Light"	 		(gPowerOffice) [ "power" ] { channel="mox:1_gang_dimmer:office:activePower" }
 Number power_outlet_office1 "Office Outlet 1"		(gPowerOffice) [ "power" ] { channel="mox:1_gang_onoff:outlet_office1:activePower" }
