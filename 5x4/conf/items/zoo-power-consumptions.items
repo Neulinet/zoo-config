@@ -53,11 +53,11 @@ Number consum_vanity 			"Vanity GPO" 			(gConsumBedroom) [ "consumption" ] { cha
 Number consum_bathroom_gpo		"Bathroom GPO" 			(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:bathroom_gpo:activeEnergy" }
 Number consum_toilet_nite	        "Toilet nite"   		(gConsumBedroom) [ "consumption" ]     { channel="mox:1_gang_onoff:toilet_nite:activeEnergy" }
 Number consum_toilet_lum        	"Shower light"  		(gConsumBedroom) [ "consumption" ]     { channel="mox:1_gang_onoff:toilet_lum:activeEnergy" }
+Number consum_glass_wall 			"Glass Wall GPO" 		(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:glass_wall:activeEnergy" }
+Number consum_glass_wall_2 			"Glass Wall 2 GPO" 		(gConsumBedroom) [ "consumption" ] { channel="mox:1_gang_onoff:glass_wall_2:activeEnergy" }
 	
 // Library/Stairs
 	
-Number consum_glass_wall 			"Glass Wall GPO" 		(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:glass_wall:activeEnergy" }
-Number consum_glass_wall_2 			"Glass Wall 2 GPO" 		(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:glass_wall_2:activeEnergy" }
 Number consum_library 				"Library" 				(gConsumLibrary) [ "consumption" ] { channel="mox:1_gang_onoff:library:activeEnergy" }
 
 	

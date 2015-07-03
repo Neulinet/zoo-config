@@ -53,11 +53,11 @@ Group:Number:SUM gPowerStairs		"Stairs"	(gPower)
 	Number power_outlet_bathroom 				"Bathroom GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:bathroom_gpo:activePower" }
 	Number power_toilet_nite	        	"Toilet nite"   (gPowerBedroom)      [ "power" ]     { channel="mox:1_gang_onoff:toilet_nite:activePower" }
 	Number power_toilet_lum			        "Shower light"  (gPowerBedroom)      [ "power" ]     { channel="mox:1_gang_onoff:toilet_lum:activePower" }
+	Number power_outlet_glass_wall 			"Glass Wall GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:glass_wall:activePower" }
+	Number power_outlet_glass_wall_2 			"Glass Wall 2 GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:glass_wall_2:activePower" }
 	
 	// Library
 	
-	Number power_outlet_glass_wall 			"Glass Wall GPO" 	(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:glass_wall:activePower" }
-	Number power_outlet_glass_wall_2 			"Glass Wall 2 GPO" 	(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:glass_wall_2:activePower" }
 	Number power_outlet_library 				"Library" 			(gPowerLibrary) [ "power" ] { channel="mox:1_gang_onoff:library:activePower" }
 	
 	
