@@ -17,7 +17,7 @@ mox:1_gang_dimmer:bedroom_plant	[ oid=202 ]
 
 mox:1_gang_onoff:tv_area 	[ oid=335 ]
 mox:1_gang_onoff:glass_wall	[ oid=338 ]
-mox:1_gang_onoff:glass_wall_2	[ oid=336 ]
+mox:1_gang_onoff:glass_wall_2	[ oid=504 ]
 mox:1_gang_onoff:range_hood 	[ oid=350 ]
 mox:1_gang_onoff:side_bench	[ oid=379 ]
 mox:1_gang_onoff:tv_area_2	[ oid=361 ]
