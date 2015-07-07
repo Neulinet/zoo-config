@@ -1,14 +1,14 @@
 mox:gateway:221 [ udpHost="192.168.0.253" ]
 
-mox:1_gang_dimmer:studio_front	[ oid=210 ]
-mox:1_gang_dimmer:studio_back	[ oid=206 ]
+mox:1_gang_onoff:studio_front	[ oid=406 ]
+mox:1_gang_onoff:studio_back	[ oid=407 ]
 
 
-mox:1_gang_dimmer:ralph_bed 		[ oid=209 ]
+mox:1_gang_onoff:ralph_bed 		[ oid=401 ]
 mox:1_gang_onoff:outlet_ralph1	[ oid=313 ]
 mox:1_gang_onoff:outlet_ralph2	[ oid=312 ]
 
-mox:1_gang_dimmer:office		[ oid=235 ]
+mox:1_gang_onoff:office			[ oid=402 ]
 mox:1_gang_onoff:outlet_office1	[ oid=316 ]
 mox:1_gang_onoff:outlet_office2	[ oid=320 ]
 mox:1_gang_onoff:outlet_office3	[ oid=315 ]
@@ -16,11 +16,11 @@ mox:1_gang_onoff:outlet_office4	[ oid=318 ]
 
 mox:1_gang_onoff:laundry		[ oid=310 ]
 
-mox:1_gang_dimmer:cellar		[ oid=246 ]
+mox:1_gang_onoff:cellar			[ oid=404 ]
 
 mox:1_gang_onoff:bath_mirror	[ oid=152 ]
 mox:1_gang_onoff:bath_fan		[ oid=105 ]
-mox:1_gang_dimmer:bath			[ oid=245 ]
+mox:1_gang_onoff:bath			[ oid=403 ]
 mox:1_gang_onoff:outlet_bathroom1	[ oid=154 ]
 
 
@@ -29,7 +29,7 @@ mox:1_gang_onoff:outlet_bathroom1	[ oid=154 ]
 mox:1_gang_onoff:outlet_laundry1	[ oid=301 ]
 mox:1_gang_onoff:outlet_laundry2	[ oid=302 ]
 
-mox:1_gang_dimmer:entry				[ oid=205 ]
+mox:1_gang_onoff:entry				[ oid=405 ]
 mox:1_gang_onoff:outlet_entry1		[ oid=309 ]
 mox:1_gang_onoff:outlet_entry2		[ oid=311 ]
 
