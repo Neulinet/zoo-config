@@ -34,28 +34,28 @@ Group:Switch:OR(ON, OFF) gLiving	"Living" 	(gRooms) [ "home-group", "room", "mas
 // Lights and Power per room 
 
 // Studio
-Dimmer light_studio_front "Front" 	(gStudio, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:studio_front:state" }
-Dimmer light_studio_back "Back" 	(gStudio, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:studio_back:state" }
+Switch light_studio_front "Front" 	(gStudio, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:studio_front:state" }
+Switch light_studio_back "Back" 	(gStudio, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:studio_back:state" }
 
 // Down stairs Bed 
-Dimmer light_ralph_bed "Bed"	 	(gRalph, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:ralph_bed:state" }
+Switch light_ralph_bed "Bed"	 	(gRalph, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:ralph_bed:state" }
 Switch power_ralph_bed1 "Bed 1"	(gRalph, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph1:state" } 
 Switch power_ralph_bed2 "Bed 2"	(gRalph, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_ralph2:state" } 
 
 // Office
-Dimmer light_office "Office Light"	 	(gOffice, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:office:state" }
+Switch light_office "Office Light"	 	(gOffice, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:office:state" }
 Switch power_office1 "Office Outlet 1"	(gOffice, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office1:state" }
 Switch power_office2 "Office Outlet 2"	(gOffice, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office2:state" } 
 Switch power_office3 "Office Outlet 3"	(gOffice, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office3:state" } 
 Switch power_office4 "Office Outlet 4"	(gOffice, gPowerDef) 	[ "power" ] { channel="mox:1_gang_onoff:outlet_office4:state" } 
 
 // Entry 
-Dimmer light_entry "Entry Light"	 		(gEntry, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:entry:state" }
+Switch light_entry "Entry Light"	 		(gEntry, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:entry:state" }
 Switch power_entry1 "Entry Outlet 1"		(gEntry, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry1:state" } 
 Switch power_entry2 "Entry Outlet 2"		(gEntry, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entry2:state" } 
 
 // Cellar
-Dimmer light_cellar "Cellar"	 	(gCellar, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:cellar:state" }
+Switch light_cellar "Cellar"	 	(gCellar, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:cellar:state" }
 
 // Laundry 
 Switch light_laundry "Laundry Lights and Fan"	(gLaundry, gLightDef) 	 ["light"] { channel="mox:1_gang_onoff:laundry:state" }
@@ -65,7 +65,7 @@ Switch power_laundry_fan		"Washer and Dryer"		(gLaundry, gPowerDef) 	[ "power" ]
 // 1st floor bathroom 
 Switch light_bath_mirror "Mirror"	(gBath, gLightDef) 	[ "light" ] { channel="mox:1_gang_onoff:bath_mirror:state" } 
 Switch light_bath_fan "Fan"			(gBath, gLightDef) 	 [ "fan" ] { channel="mox:1_gang_onoff:bath_fan:state" }
-Dimmer light_bath "Ceiling"			(gBath, gLightDef) 	[ "light" ] { channel="mox:1_gang_onoff:bath:state" } 
+Switch light_bath "Ceiling"			(gBath, gLightDef) 	[ "light" ] { channel="mox:1_gang_onoff:bath:state" } 
 Switch power_bath_main "Bath Outlet" (gBath, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:outlet_bathroom1:state" } 
 
 // Stairs
@@ -84,7 +84,7 @@ Switch light_west_deck     "West Deck"	(gLiving, gLightDef) 	 [ "light" ] { chan
 Switch light_lounge    "Lounge"	(gLiving, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:lounge:state" }
 Switch power_entert1 "Entertainment 1" (gLiving, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert1:state" }
 Switch power_entert2 "Entertainment 2" (gLiving, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:outlet_entert2:state" }
-Dimmer light_Round_light_box   "Light Box"	(gLiving, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:round_light_box:state" }
+Switch light_Round_light_box   "Light Box"	(gLiving, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:round_light_box:state" }
 
 // Kitchen 
 Switch light_kitchen   "Kitchen"	(gKitchen, gLightDef) 	 [ "light" ] { channel="mox:1_gang_onoff:kitchen:state" }
