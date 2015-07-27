@@ -1,0 +1,30 @@
+mox:gateway:221 [ udpHost="10.0.0.5" ]
+
+mox:1_gang_onoff:master	[ oid=110 ]
+mox:1_gang_onoff:jake_zac	[ oid=218 ]
+mox:1_gang_onoff:front_porch [ oid=151 ]
+mox:1_gang_onoff:entrance [ oid=105 ]
+mox:1_gang_onoff:front_lounge [ oid=205 ]
+mox:1_gang_onoff:dinning [ oid=212 ]
+mox:1_gang_onoff:laundry [ oid=103 ]
+mox:1_gang_onoff:outdoor_1 [ oid=211 ]
+mox:1_gang_onoff:outdoor_2 [ oid=219 ]
+
+mox:1_gang_onoff:meals [ oid=107 ]
+mox:1_gang_onoff:kitchen_meals [ oid=104 ]
+mox:1_gang_onoff:family [ oid=161 ]
+mox:1_gang_onoff:rear_family [ oid=208 ]
+mox:1_gang_onoff:hall [ oid=206 ]
+mox:1_gang_onoff:joshua [ oid=112 ]
+mox:1_gang_onoff:caitlin [ oid=207 ]
+
+
+mox:1_gang_onoff:family_p [ oid=113 ]
+mox:1_gang_onoff:ensuite_p [ oid=150 ]
+mox:1_gang_onoff:catitlin_p [ oid=109 ]
+
+
+mox:1_gang_onoff:bathroom_p [ oid=152 ]
+
+
+

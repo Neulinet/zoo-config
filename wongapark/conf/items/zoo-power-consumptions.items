@@ -1,0 +1,7 @@
+// Consumption
+
+Group:Number:SUM gConsumptions		"Consumption" (gZooPower) [ "home-group" ]
+
+Group:Number:SUM gConsumLiving 		"Living" 	(gConsumptions)
+
+

@@ -1,0 +1,82 @@
+Group gZooPower
+Group gZooPowerChart
+Group gZooPowerDay
+Group gZooPowerWeek
+Group gZooPowerMonth
+
+Group gRooms
+
+// items that must be initialized after a openhab start
+Group gPowerDef
+Group gLightDef
+
+DateTime billPeriod_start
+DateTime billPeriod_end
+
+
+
+
+Group:Switch:OR(ON, OFF) glights	"Light" 	(gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gpowerp	"Power" 	(gRooms) [ "home-group", "room", "master-switch" ]
+
+
+
+// Lights
+
+Switch light_master		"Master"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:master:state" }
+Switch light_jake_zac		"Jake & Zac"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:jake_zac:state" }
+Switch light_front_porch	"Front Porch"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:front_porch:state" }
+Switch light_entrance		"entrance"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:entrance:state" }
+Switch light_front_lounge 		"Front Lounge"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:front_lounge:state" }
+Switch light_dinning	"Dinning"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:dinning:state" }
+Switch light_laundry	"Laundry"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:laundry:state" }
+Switch light_outdoor_1		"Outdoor 1"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:outdoor_1:state" }
+Switch light_outdoor_2 	"Outdoor 2 "		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:outdoor_2:state" }
+Switch light_kitchen_meals 		"Kitchen Meals"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:kitchen_meals:state" }
+Switch light_family		"Family"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:family:state" }
+Switch light_rear_family		"Rear Family"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:rear_family:state" }
+Switch light_hall		"Hall"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:hall:state" }
+Switch light_joshua		"Joshua"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:joshua:state" }
+Switch light_caitlin		"Caitlin"		(glights, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:caitlin:state" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Power
+
+
+Switch power_family_p  "Family"  (gpowerp, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:family_p:state" }
+Switch power_ensuite_p  "Ensuite"  (gpowerp, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:ensuite_p:state" }
+Switch power_catitlin_p  "Caitlin"  (gpowerp, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:catitlin_p:state" }
+Switch power_bathroom_p  "Bathroom"  (gpowerp, gPowerDef)	[ "power" ] { channel="mox:1_gang_onoff:bathroom_p:state" }
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
