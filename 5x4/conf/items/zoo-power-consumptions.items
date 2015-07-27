@@ -37,7 +37,7 @@ Number consum_kitchen_bench 		"Kitchen Bench GPO" 	(gConsumKitchen) [ "consumpti
 Number consum_under_sink 			"Under the Sink GPO" 	(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:under_sink:activeEnergy" }
 Number consum_dishwasher 			"Dishwasher" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:dishwasher:activeEnergy" }
 Number consum_cooler 				"Cooler" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:cooler:activeEnergy" }
-Number consum_bench					"Bench" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_dimmer:kitchen_bench:activeEnergy" }
+Number consum_bench					"Bench" 				(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:kitchen_bench:activeEnergy" }
 Number consum_track					"Track Spots" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:kitchen_track:activeEnergy" }
 Number consum_strip					"Beam" 					(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:k_beam:activeEnergy" }
 Number consum_garden			"Planter Box" 			(gConsumKitchen) [ "consumption" ] { channel="mox:1_gang_onoff:kitchen_garden_lights:activeEnergy" }
@@ -63,7 +63,7 @@ Number consum_library 				"Library" 				(gConsumLibrary) [ "consumption" ] { cha
 	
 // Roof Deck
 	
-Number consum_stairs_roof 			"Deck Stairs" 			(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_dimmer:stairs_roof:activeEnergy" }
+Number consum_stairs_roof 			"Deck Stairs" 			(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:stairs_roof:activeEnergy" }
 Number consum_spa 					"Spa" 					(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:spa:activeEnergy" }
 Number consum_roof_top 				"Bar Fridge" 			(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:roof_top:activeEnergy" }
 Number consum_roof_bbq 				"BBQ" 					(gConsumRooftop) [ "consumption" ] { channel="mox:1_gang_onoff:roof_bbq:activeEnergy" }
