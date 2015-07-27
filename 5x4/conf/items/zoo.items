@@ -49,7 +49,7 @@ Switch power_garage 			"Garage GPO"	(gGarage, gPowerDef) 	[ "power" ] 	{ channel
 Switch light_kitchen_bench      "Bench"                 (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_bench:state" }
 Switch light_kitchen_track      "Track Spots"           (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_track:state" }
 Switch light_k_beam             "Beam"                  (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:k_beam:state" }
-Dimmer light_kitchen_garden     "Planter Box"           (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_dimmer:kitchen_garden:state" }
+Switch light_kitchen_garden     "Planter Box"           (gKitchen, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:kitchen_garden:state" }
 Switch power_tv_Area 		"Tv Area GPO"		(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:tv_area:state" }
 Switch power_range_hood 	"Range Hood GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:range_hood:state" }
 Switch power_side_bench 	"Side Bench GPO" 	(gKitchen, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:side_bench:state" }
@@ -64,7 +64,7 @@ Switch power_glass_wall_2	"Glass Wall 2 GPO"	(gKitchen, gPowerDef) 	[ "power" ] 
 
 // Bedroom/Ensuite
 
-Dimmer light_bedroom_plant	"Planter Box"	(gBedroom, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:bedroom_plant:state" }
+Switch light_bedroom_plant	"Planter Box"	(gBedroom, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:bedroom_plant:state" }
 Switch light_toilet_nite    "Toilet nite"   (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_nite:state" }
 Switch light_toilet_lum     "Shower light"  (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:toilet_lum:state" }
 Switch light_bedroom_beam   "Beam"          (gBedroom, gLightDef)      [ "light" ]     { channel="mox:1_gang_onoff:bedroom_beam:state" }
@@ -81,7 +81,7 @@ Switch power_library		"Library"		    (gLibrary, gPowerDef) 	[ "power" ] 	{ chann
 
 // Roof Deck
 	
-Dimmer light_stairs_roof	"Deck Stairs" 	(gRooftop, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_dimmer:stairs_roof:state" }
+Switch light_stairs_roof	"Deck Stairs" 	(gRooftop, gLightDef) 	[ "light" ] 	{ channel="mox:1_gang_onoff:stairs_roof:state" }
 Switch light_roof_top_beam	"Beam"		    (gRooftop, gLightDef)	[ "light" ]	{ channel="mox:1_gang_onoff:roof_top_beam:state" }
 Switch power_spa		    "Spa"			(gRooftop, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:spa:state" }
 Switch power_roof_top		"Bar Fridge"	(gRooftop, gPowerDef) 	[ "power" ] 	{ channel="mox:1_gang_onoff:roof_top:state" }
