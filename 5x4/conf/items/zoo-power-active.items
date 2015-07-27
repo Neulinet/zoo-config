@@ -40,13 +40,13 @@ Group:Number:SUM gPowerStairs		"Stairs"	(gPower)
 	Number power_bench					"Bench" 		(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:kitchen_bench:activePower" }
 	Number power_track 					"Track Spots" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:kitchen_track:activePower" }
 	Number power_k_beam 					"Beam" 			(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:k_beam:activePower" }
-	Number power_garden 				"Planter Box" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_dimmer:kitchen_garden:activePower" }
+	Number power_garden 				"Planter Box" 	(gPowerKitchen) [ "power" ] { channel="mox:1_gang_onoff:kitchen_garden:activePower" }
 	
 	
 	// Bedroom/Ensuite
 	
 	Number power_bedroom_beam 			"Beam" 		(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:bedroom_beam:activePower" }
-	Number power_bedroom_plant 			"Panter Box" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_dimmer:bedroom_plant:activePower" }
+	Number power_bedroom_plant 			"Panter Box" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:bedroom_plant:activePower" }
 	Number power_outlet_coms_cupboard 			"Cupboard" 		(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:cupboard:activePower" }
 	Number power_outlet_bedroom 				"Bedroom GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:bedroom:activePower" }
 	Number power_outlet_vanity 				"Vanity GPO" 	(gPowerBedroom) [ "power" ] { channel="mox:1_gang_onoff:vanity:activePower" }
@@ -63,7 +63,7 @@ Group:Number:SUM gPowerStairs		"Stairs"	(gPower)
 	
 	// Roof Deck
 	
-	Number power_stairs_roof 			"Deck Stairs" 		(gPowerRooftop) [ "power" ] { channel="mox:1_gang_dimmer:stairs_roof:activePower" }
+	Number power_stairs_roof 			"Deck Stairs" 		(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:stairs_roof:activePower" }
 	Number power_outlet_spa 				"Spa" 				(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:spa:activePower" }
 	Number power_outlet_roof_top 				"Bar Fridge" 		(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:roof_top:activePower" }
 	Number power_outlet_roof_bbq 				"BBQ" 				(gPowerRooftop) [ "power" ] { channel="mox:1_gang_onoff:roof_bbq:activePower" }
