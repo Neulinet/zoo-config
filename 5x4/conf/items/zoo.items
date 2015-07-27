@@ -21,12 +21,13 @@ Group:Switch:OR(ON, OFF) gKitchen 	"Kitchen/Living" 	(gRooms) [ "home-group", "r
 Group:Switch:OR(ON, OFF) gBedroom 	"Bedroom/Ensuite" 	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gLibrary 	"Library"         	(gRooms) [ "home-group", "room", "master-switch" ]
 Group:Switch:OR(ON, OFF) gRooftop 	"Roof Deck" 		(gRooms) [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) gStairs	"Stairs"		    (gRooms) [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) gStairs	"Stairs/Exterior"		    (gRooms) [ "home-group", "room", "master-switch" ]
 
 // Lights and Power per room 
 
 //  Stairs
 Switch light_stairs             "Stairs"        (gStairs)       [ "light" ]     { channel="mox:1_gang_onoff:stairs:state" }
+Switch light_exterior             "Outdoor Light"        (gStairs)       [ "light" ]     { channel="mox:1_gang_onoff:exterior:state" }
 
 
 // Garage/Office
