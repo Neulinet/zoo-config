@@ -1,0 +1,21 @@
+Strategies {
+	everyMinute : "0 * * * * ?"
+	default = everyChange, everyMinute
+}
+
+Items {
+	gConsumptions*
+	gConsumStudio
+	gConsumRalph
+	gConsumOffice
+	gConsumEntry
+	gConsumCellar
+	gConsumLaundry
+	gConsumBath
+	gConsumUpStairs
+	gConsumExterior
+	gConsumDining
+	gConsumMaster
+	gConsumKitchen
+	gConsumLiving
+}

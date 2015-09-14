@@ -1,0 +1,53 @@
+import org.openhab.model.script.actions.*
+import org.openhab.action.mail-1.3.1.*
+
+// Rule to initialize GPO's and inform to the user
+
+
+val String mailTo = "ralph@barleystore.com.au"
+
+rule "GPO Initialization"
+when
+	System started
+then
+
+    try {
+        createTimer(now.plusSeconds(60)) [|
+            // Initializing members
+            gPowerDef?.members.forEach[ powerItem | sendCommand(powerItem, ON)]
+			gLightDef?.members.forEach[ powerItem | sendCommand(powerItem, OFF)]
+            ]
+        }
+        finally{
+            createTimer(now.plusSeconds(120)) [|sendMail(mailTo, "Server has just started", "The server has just started, all the GPOs have been turned on and the lights have been turned off")
+			]
+        }
+
+end
+
+rule "Entrance security"
+when
+	Item light_ext_north1 changed to OFF
+then
+	sendCommand(light_ext_north1, ON)
+end
+
+rule "Fridge Power sum"
+when
+	Item Fridge_kWh changed
+then
+	var Number consumptionDelta = Fridge_kWh.state - previousState
+	postUpdate(Fridge_kWh_week, Fridge_kWh_week.state + (consumptionDelta as DecimalType))
+	logInfo("Fridge kWh increased by " + consumptionDelta)
+end
+
+
+/*rule "DevSetup: Increase value .1 per minute"
+when
+		Time cron "0 * * * * ?"
+then
+		gZooPower?.members.forEach(consumer|
+			logInfo("test")
+			postUpdate(consumer, 1 + (consumer.state as DecimalType))
+		}
+end*/
