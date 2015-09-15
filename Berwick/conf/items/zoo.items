@@ -16,27 +16,27 @@ DateTime billPeriod_end
 
 // Rooms and Master Switches
 
-Group:Switch:OR(ON, OFF) 	gMasterb "Master Bedroom"		    (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gMastere	"Master En Suite"		(gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gEntryi	"Entry Internal"		    (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gStudy	"Study"		                (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gLounge	"Loung	"		            (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gGym 	"Gym"		                (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gLaundry	"Laundry/Powder Room"	(gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gKitchen	"Kitchen"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gDining	"Dining Area"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gEntrye	"Entry External"		    (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gRumpus	"Rumpus/Bar"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gGarage	"Garage"		            (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gPoolh	"Pool House"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gPoolwc	"Pool House WC"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gAlfresco	"Alfresco/BBQ"	   	    (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gBlinds	"Living Blinds"		        (gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gPoolwc2	"Pool House WC 2"		(gRooms)	( [ "home-group", "room", "master-switch" ]
-Group:Switch:OR(ON, OFF) 	gAlfresco2	"Alfresco/BBQ 2"		(gRooms)	( [ "home-group", "room", "master-switch" ]
+Group:Switch:OR(ON, OFF) 	gMasterb "Master Bedroom"		    (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gMastere	"Master En Suite"		(gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gEntryi	"Entry Internal"		    (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gStudy	"Study"		                (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gLounge	"Lounge	"		            (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gGym 	"Gym"		                (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gLaundry	"Laundry/Powder Room"	(gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gKitchen	"Kitchen"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gDining	"Dining Area"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gEntrye	"Entry External"		    (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gRumpus	"Rumpus/Bar"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gGarage	"Garage"		            (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gPoolh	"Pool House"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gPoolwc	"Pool House WC"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gAlfresco	"Alfresco/BBQ"	   	    (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gBlinds	"Living Blinds"		        (gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gPoolwc2	"Pool House WC 2"		(gRooms)	 [ "home-group", "room", "master-switch" ] 
+Group:Switch:OR(ON, OFF) 	gAlfresco2	"Alfresco/BBQ 2"		(gRooms)	[ "home-group", "room", "master-switch" ] 
 
 //Master Bedroom
-Dimmer light_main_lights     "Main Light" (gMasterb) [ "light" ] { channel="mox:1_gang_dimmer:main_lights:state"   }
+Dimmer light_main     "Main Light" (gMasterb) [ "light" ] { channel="mox:1_gang_dimmer:main:state"   }
 Switch power_ceiling_fan    "Ceiling Fan" (gMasterb) ["power"] { channel="mox:1_gang_onoff:ceiling_fan:state" }
 Switch power_wardrobe       "Wardrobe" (gMasterb) ["power"] { channel="mox:1_gang_onoff:wardrobe:state"
 Dimmerlight_deck            "Deck" (gMasterb)  ["light"] { channel="mox:1_gang_dimmer:deck:state" }
@@ -46,142 +46,142 @@ Switch power_drapes_close   "Drapes Close" (gMasterb) ["power"] { channel="mox:1
 
 
 //Master Ensuite
-Switch power_toilet_fan     "Toilet Fan" (gMastere) ["power"] {channel="mox:1_gang_onoff:toilet_fan:state"}
-Switch ligth_toilet_ligth   "Toilet Light" (gMastere) ["ligth"] {channel="mox:1_gang_onoff:toilet_light:state"}
-Switch power_en_suite_fan   "En suite Fan" (gMastere) ["power"] {channel="mox:1_gang_onoff:en_suite_fan:state"}
-Dimmer ligth_en_suite       "En Suite" (gMastere) ["ligth"] {channel="mox:1_gang_dimmer:en_suite:state"}
-Dimmer ligth_vanity         "Vanity" (gMastere) ["ligth"] {channel="mox:1_gang_dimmer:vanity:state"}
-Dimmer ligth_bath_ligth     "Bath Light" (gMastere) ["light"] {channel:"mox:1_gang_dimmer:bath_light:state"}
+Switch power_toilet_fan     "Toilet Fan" (gMastere) ["power"] { channel="mox:1_gang_onoff:toilet_fan:state"}
+Switch light_toilet   "Toilet Light" (gMastere) ["light"] { channel="mox:1_gang_onoff:toilet_light:state"}
+Switch power_en_suite_fan   "En suite Fan" (gMastere) ["power"] { channel="mox:1_gang_onoff:en_suite_fan:state"}
+Dimmer light_en_suite       "En Suite" (gMastere) ["light"] { channel="mox:1_gang_dimmer:en_suite:state"}
+Dimmer light_vanity         "Vanity" (gMastere) ["light"] { channel="mox:1_gang_dimmer:vanity:state"}
+Dimmer light_bath_light     "Bath Light" (gMastere) ["light"] { channel:"mox:1_gang_dimmer:bath_light:state"}
 
 
 //Entry Internal
-Switch light_entry_uplight      "Entry Uplight" (gEntryi) ["ligth"] {channel="mox:1_gang_onoff:entry_uplight:state"}
-Switch ligth_steplights         "Step Lights: (gEntryi) ["ligth"] {channel="mox:1_gang_onoff:steplights:state"}
-Switch light_stairwell_ceiling  "Stairwell Ceiling" (gEntryi) ["ligth"] {channel="mox:1_gang_onoff:stairwell_ceiling:state"}
-Dimmerligth_pendant             "Pendant" (gEntryi) ["ligth"] {channel="mox:1_gang_dimmer:pendant:state"}
+Switch light_entry_uplight      "Entry Uplight" (gEntryi) ["light"] { channel="mox:1_gang_onoff:entry_uplight:state"}
+Switch light_step         "Step Lights: (gEntryi) ["light"] { channel="mox:1_gang_onoff:step:state"}
+Switch light_stairwell_ceiling  "Stairwell Ceiling" (gEntryi) ["light"] { channel="mox:1_gang_onoff:stairwell_ceiling:state"}
+Dimmerlight_pendant             "Pendant" (gEntryi) ["light"] { channel="mox:1_gang_dimmer:pendant:state"}
 
 
 //Study
-Switch power_ceiling_fan2       "Ceiling fan" (gStudy) ["power"] {channel="mox:1_gang_onoff:ceiling_fan2:state"}
-Dimmer ligth_downlights         "Downlights" (gStudy) ["ligth"] {channel="mox:1_gang_dimmer:downlights"}
+Switch power_ceiling_fan2       "Ceiling fan" (gStudy) ["power"] { channel="mox:1_gang_onoff:ceiling_fan2:state"}
+Dimmer light_down         "Down" (gStudy) ["light"] { channel="mox:1_gang_dimmer:down"}
 
 
 //Lounge
-Dimmer ligth_pendant2           "Pendant" (gLounge) ["ligth"] {channel="mox:1_gang_dimmer:pendant2:state"}
-Dimmer ligth_downlights2        "Downlights" (gLounge) ["ligth"] {channel="mox:1_gang_dimmer:downlights2:state"}
-Switch power_blinds_open        "Blinds Open" (gLounge) ["power"] {channel="mox:1_gang_onoff:blinds_open:state"}
-Switch power_blinds_close       "Blinds Close" (gLounge) ["power"] {channel="mox:1_gang_onoff:blinds_close:state"}
-Switch ligth_recess             "Recess" (gLounge) ["ligth"] {channel="mox:1_gang_onoff:recess:state"}
+Dimmer light_pendant2           "Pendant" (gLounge) ["light"] { channel="mox:1_gang_dimmer:pendant2:state"}
+Dimmer light_down2        "Down" (gLounge) ["light"] { channel="mox:1_gang_dimmer:down2:state"}
+Switch power_blinds_open        "Blinds Open" (gLounge) ["power"] { channel="mox:1_gang_onoff:blinds_open:state"}
+Switch power_blinds_close       "Blinds Close" (gLounge) ["power"] { channel="mox:1_gang_onoff:blinds_close:state"}
+Switch light_recess             "Recess" (gLounge) ["light"] { channel="mox:1_gang_onoff:recess:state"}
 
 
 //Gym
-Dimmer ligth_stairwell          "Stairwell" (gGym) ["light"] {channel="mox:1_gang_dimmer:stairwell:state"}
-Dimmer light_gym                "Gym" (gGym) ["light"] {channel="mox:1_gang_dimmer:gym:state"}
-Dimmer light_wine               "Wine" (gGym) ["light"] {channel="mox:1_gang_dimmer:wine:state"}
-Switch power_gym_tv             "Gym TV" (gGym) ["power"] {channel="mox:1_gang_onoff:gym_tv:state"}
+Dimmer light_stairwell          "Stairwell" (gGym) ["light"] { channel="mox:1_gang_dimmer:stairwell:state"}
+Dimmer light_gym                "Gym" (gGym) ["light"] { channel="mox:1_gang_dimmer:gym:state"}
+Dimmer light_wine               "Wine" (gGym) ["light"] { channel="mox:1_gang_dimmer:wine:state"}
+Switch power_gym_tv             "Gym TV" (gGym) ["power"] { channel="mox:1_gang_onoff:gym_tv:state"}
 
 
 //Laundry / Powder Room
-Switch power_laundry            "Laundry" (gLaundry) ["power"] {channel="mox:1_gang_onoff:laundry:state"}
-Switch power_laundry_hall       "Laundry Wall" (gLaundry)  ["power"] {channel="mox:1_gang_onoff:laundry_hall:state"}
-Switch power_l_exit             "L. Exit" ["power"] (gLaundry) {channel="mox:1_gang_onoff:l_exit:state"}
-Switch ligth_toilet_ligth2      "Toilet Light" (gLaundry)  ["light"] {channel="mox:1_gang_onoff:toilet_light2:state"}
-Switch power_powder_fan         "Powder Fan" (gLaundry)  ["power"] {channel="mox:1_gang_onoff:powder_fan:state"}
-Dimmer light_vanity2            "Vanity" (gLaundry) ["light} {channel="mox:1_gang_dimmer:vanity:state"}
+Switch power_laundry            "Laundry" (gLaundry) ["power"] { channel="mox:1_gang_onoff:laundry:state"}
+Switch power_laundry_hall       "Laundry Wall" (gLaundry)  ["power"] { channel="mox:1_gang_onoff:laundry_hall:state"}
+Switch power_l_exit             "L. Exit" ["power"] (gLaundry) { channel="mox:1_gang_onoff:l_exit:state"}
+Switch light_toilet_light2      "Toilet Light" (gLaundry)  ["light"] { channel="mox:1_gang_onoff:toilet_light2:state"}
+Switch power_powder_fan         "Powder Fan" (gLaundry)  ["power"] { channel="mox:1_gang_onoff:powder_fan:state"}
+Dimmer light_vanity2            "Vanity" (gLaundry) ["light} { channel="mox:1_gang_dimmer:vanity:state"}
 
 
 //Kitchen
-Switch power_comms              "Comms" (gKitchen) ["power"]   {channel="mox:1_gang_onoff:comms:state"}
-Switch power_pantry             "Pantry"    (gKitchen) ["power"] {channel="mox:1_gang_onoff:pantry:state"}
-Dimmer light_hallway2           "hallway2" (gKitchen) ["light"] {channel="mox:1_gang_dimmer:hallway2:state"}
-Dimmer light_pendant3           "Pendant" (gKitchen) ["light"] {channel="mox:1_gang_dimmer:pendant3:state"}
-Dimmer light_sink_bench         "Sink Bench" (gKitchen) ["light"] {channel="mox:1_gang_dimmer:sink_bench:state"}
-Dimmer light_bbq_bench          "BBQ Bench" (gKitchen) ["light"] {channel="mox:1_gang_dimmer:bbq_bench:state"}
-Switch power_pantry_fridge      "Pantry Bridge" (gKitchen) ["power"] {channel="mox:1_gang_onoff:pantry_fridge:state"}
+Switch power_comms              "Comms" (gKitchen) ["power"]   { channel="mox:1_gang_onoff:comms:state"}
+Switch power_pantry             "Pantry"    (gKitchen) ["power"] { channel="mox:1_gang_onoff:pantry:state"}
+Dimmer light_hallway2           "hallway2" (gKitchen) ["light"] { channel="mox:1_gang_dimmer:hallway2:state"}
+Dimmer light_pendant3           "Pendant" (gKitchen) ["light"] { channel="mox:1_gang_dimmer:pendant3:state"}
+Dimmer light_sink_bench         "Sink Bench" (gKitchen) ["light"] { channel="mox:1_gang_dimmer:sink_bench:state"}
+Dimmer light_bbq_bench          "BBQ Bench" (gKitchen) ["light"] { channel="mox:1_gang_dimmer:bbq_bench:state"}
+Switch power_pantry_fridge      "Pantry Bridge" (gKitchen) ["power"] { channel="mox:1_gang_onoff:pantry_fridge:state"}
 
 
 //Dinning Area
-Dimmer ligth_wall               "Wall" (gDining) ["ligth"] {channel="mox:1_gang_dimmer:wall:state"}
-Dimmerh ligth_pendant4          "Pendant" (gDining) ["ligth"] {channel="mox:1_gang_dimmer:pendant4:state"}
-Dimmer ligth_downlights3        "Downlights" (gDining) ["ligth"] {channel="mox:1_gang_dimmer:downlights3:state"}
-Dimmer ligth_family_x6          "Family x6" (gDining) ["light"] {channel="mox:1_gang_dimmer:family_x6:state"}
-Dimmer ligth_family_x2          "Family x2" (gDining) ["ligth"] {channel="mox:1_gang_dimmer:family_x2:state"}
+Dimmer light_wall               "Wall" (gDining) ["light"] { channel="mox:1_gang_dimmer:wall:state"}
+Dimmerh light_pendant4          "Pendant" (gDining) ["light"] { channel="mox:1_gang_dimmer:pendant4:state"}
+Dimmer light_down3        "Down" (gDining) ["light"] { channel="mox:1_gang_dimmer:down3:state"}
+Dimmer light_family_x6          "Family x6" (gDining) ["light"] { channel="mox:1_gang_dimmer:family_x6:state"}
+Dimmer light_family_x2          "Family x2" (gDining) ["light"] { channel="mox:1_gang_dimmer:family_x2:state"}
 
 
 //Entry External
-Switch power_wall_garagE        "Wall GaragE" (gEntrye) ["power"] {channel="mox:1_gang_onoff:wall_garagE:state"}
-Switch power_wall_door          "Wall Door" (gEntrye) ["power"] {channel="mox:1_gang_onoff::wall_door:state"}
-Switch power_drive_floods       "Drive Floods" (gEntrye) ["power"] {channel="mox:1_gang_onoff:drive_floods:state"}
-Switch power_garden_1           "Garden 1" (gEntrye) ["power"] {channel="mox:1_gang_onoff:garden_1:state"}
-Switch power_garden_2           "Garden 2" (gEntrye) ["power"] {channel="mox:1_gang_onoff:garden_2:state"}
-Switch light_spotlightsp2       "Spotlights" (gEntrye) ["light"] {channel="mox:1_gang_onoff:spotlightsp2:state"}
-Switch light_steplights2        "Steplights" (gEntrye) ["light"]  {channel="mox:1_gang_onoff:steplights2:state"}
-Switch ligth_dining_spots       "Dininng Spots" (gEntrye) ["light"] {channel="mox:1_gang_onoff:dining_spots:state"}
-Switch light_bollards           "Bollards" (gEntrye) ["light"] {channel="mox:1_gang_onoff:bollards:state"}
+Switch power_wall_garagE        "Wall GaragE" (gEntrye) ["power"] { channel="mox:1_gang_onoff:wall_garagE:state"}
+Switch power_wall_door          "Wall Door" (gEntrye) ["power"] { channel="mox:1_gang_onoff::wall_door:state"}
+Switch power_drive_floods       "Drive Floods" (gEntrye) ["power"] { channel="mox:1_gang_onoff:drive_floods:state"}
+Switch power_garden_1           "Garden 1" (gEntrye) ["power"] { channel="mox:1_gang_onoff:garden_1:state"}
+Switch power_garden_2           "Garden 2" (gEntrye) ["power"] { channel="mox:1_gang_onoff:garden_2:state"}
+Switch light_spotp2       "Spot" (gEntrye) ["light"] { channel="mox:1_gang_onoff:spotp2:state"}
+Switch light_step2        "Step" (gEntrye) ["light"]  { channel="mox:1_gang_onoff:step2:state"}
+Switch light_dining_spots       "Dininng Spots" (gEntrye) ["light"] { channel="mox:1_gang_onoff:dining_spots:state"}
+Switch light_bollards           "Bollards" (gEntrye) ["light"] { channel="mox:1_gang_onoff:bollards:state"}
 
 
 //Pool House
-Switch power_ceiling_fan3       "Ceiling Fan" (gPoolh) ["power"] {channel="mox:1_gang_onoff:ceiling_fan3:state"}
-Switch power_pool_flood         "Pool Flood" (gPoolh) ["power"] {channel="mox:1_gang_onoff:pool_flood:state"}
-Switch light_downlights4        "Downlights" (gPoolh) ["power"] {channel="mox:1_gang_onoff:downlights4:state"}
-Switch power_pool_tv            "Pool TV" ["power"] (gPoolh) {channel="mox:1_gang_onoff:pool_tv:state"}
-Switch power_pool_fridge        "Pool Fridge" (gPoolh)  ["power"] {channel="mox:1_gang_onoff:pool_fridge:state"}
+Switch power_ceiling_fan3       "Ceiling Fan" (gPoolh) ["power"] { channel="mox:1_gang_onoff:ceiling_fan3:state"}
+Switch power_pool_flood         "Pool Flood" (gPoolh) ["power"] { channel="mox:1_gang_onoff:pool_flood:state"}
+Switch light_down4        "Down" (gPoolh) ["power"] { channel="mox:1_gang_onoff:down4:state"}
+Switch power_pool_tv            "Pool TV"  (gPoolh)["power"] { channel="mox:1_gang_onoff:pool_tv:state"}
+Switch power_pool_fridge        "Pool Fridge" (gPoolh)  ["power"] { channel="mox:1_gang_onoff:pool_fridge:state"}
 
 
 //Pool House WC
-Switch light_downlights5        "Downlights" (gPoolwc) ["light"] {channel="mox:1_gang_onoff:downlights5:state"}
-Switch light_vanity3            "Vanity" (gPoolwc) ["light"] {channel="mox:1_gang_onoff:vanity3:state"}
-Switch power_exhoust_fan        "Exhaust Fan" (gPoolwc) ["power"] {channell="mox:1_gang_onoff:exhaust_fan:state"}
+Switch light_down5        "Down" (gPoolwc) ["light"] { channel="mox:1_gang_onoff:down5:state"}
+Switch light_vanity3            "Vanity" (gPoolwc) ["light"] { channel="mox:1_gang_onoff:vanity3:state"}
+Switch power_exhoust       "Exhaust Fan" (gPoolwc) ["power"] { channel="mox:1_gang_onoff:exhaust:state"}
 
 
 //Rumpus Room
-Dimmer light_downlights6        "Downlights" (gRumpus) ["light"] {channel="mox:1_gang_dimmer:downlights6:state"}
-Dimmer light_bar                "Bar" (gRumpus) ["light"] {channel="mox:1_gang_dimmer:bar:state"}
-Switch power_rumpus_tv          "TV" (gRumpus) ["power"] {channel="mox:1_gang_onoff:rumpus_tv:state"}
-Switch power_bar_fridge         "Bar Fridge" (gRumpus) {channel="mox:1_gang_onoff:bar_fridge:state"}
+Dimmer light_down6        "Down" (gRumpus) ["light"] { channel="mox:1_gang_dimmer:down6:state"}
+Dimmer light_bar                "Bar" (gRumpus) ["light"] { channel="mox:1_gang_dimmer:bar:state"}
+Switch power_rumpus_tv          "TV" (gRumpus) ["power"] { channel="mox:1_gang_onoff:rumpus_tv:state"}
+Switch power_bar_fridge         "Bar Fridge" (gRumpus) { channel="mox:1_gang_onoff:bar_fridge:state"}
 
 //Garage
-Switch power_upper_floods       "Upper Floods" (gGarage) ["power"] {channel="mox:1_gang_onoff:upper_floods:state"}
-Switch power_lower_floods       "Lower Floods" (gGarage) ["power"] {channel="mox:1_gang_onoff:lower_floods:state"}
+Switch power_upper_floods       "Upper Floods" (gGarage) ["power"] { channel="mox:1_gang_onoff:upper_floods:state"}
+Switch power_lower_floods       "Lower Floods" (gGarage) ["power"] { channel="mox:1_gang_onoff:lower_floods:state"}
 
 
 //Alfresco
-Switch power_alfresco_fan       "Alfresco Fan" (gAlfresco) ["power"] {channel="mox:1_gang_onoff:alfresco_fan:state"}
-Dimmer light_alfresco_dl        "Alfresco DL" (gAlfresco) ["light"] {channel="mox:1_gang_dimmer:alfresco_dl"state"}
-Dimmer light_bbq_dl             "BBQ DL" (gAlfresco) ["light"] {channel="mox:1_gang_dimmer:bbq_dl:state"}
-Dimmer ligh_gym_stair           "Gym Stair" (gAlfresco) ["light"]   {channel="mox:1_gang_dimmer:gym_stair:state"}
-Switch power_bug_zapper         "Bug Zapper" (gAlfresco) ["power"] {channel="mox:1_gang_onoff:bug_zapper:state"}
-Switch power_heaters            "Heaters" (gAlfresco) ["power"] {channel="mox:1_gang_onoff:heaters:state"}
-Switch power_bbq_fridge         "BBQ Fridge" (gAlfresco) ["power"] {channel="mox:1_gang_onoff:bbq_fridge:state"}
+Switch power_alfresco_fan       "Alfresco Fan" (gAlfresco) ["power"] { channel="mox:1_gang_onoff:alfresco_fan:state"}
+Dimmer light_alfresco_dl        "Alfresco DL" (gAlfresco) ["light"] { channel="mox:1_gang_dimmer:alfresco_dl"state"}
+Dimmer light_bbq_dl             "BBQ DL" (gAlfresco) ["light"] { channel="mox:1_gang_dimmer:bbq_dl:state"}
+Dimmer ligh_gym_stair           "Gym Stair" (gAlfresco) ["light"]   { channel="mox:1_gang_dimmer:gym_stair:state"}
+Switch power_bug_zapper         "Bug Zapper" (gAlfresco) ["power"] { channel="mox:1_gang_onoff:bug_zapper:state"}
+Switch power_heaters            "Heaters" (gAlfresco) ["power"] { channel="mox:1_gang_onoff:heaters:state"}
+Switch power_bbq_fridge         "BBQ Fridge" (gAlfresco) ["power"] { channel="mox:1_gang_onoff:bbq_fridge:state"}
 
 
 
 
 //Living Blinds
-Switch power_beck_door_up       "Back Door Up" (gBlinds) ["power"] {channel="mox:1_gang_onoff:beck_door_up:state"}
-Switch power_back_door_down     "Back Door Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:back_door_down:state"}
-Switch power_north_window_up    "North Windows Up" (gBlinds) ["power"] {channel="mox:1_gang_onoff:north_window_down:state"}
-Switch power_north_window_down  "North Windows Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:north_window_down:state"}
-Switch power_meals_up           "Meals Up" (gBlinds) ["power"] {channel="mox:1_gang_onoff:meals_up:state"}
-Switch power_meals_down         "Meals Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:meals_down:state"}
-Switch power_rumpus_n_up         "Rumpus (n) UP" (gBlinds) ["power} {channel="mox:1_gang_onoff:rumpus_n_down:state"}
-Switch power_rumpus_n_down      "Rumpus (n) Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:rumpus_n_down:state"}
-Switch power_rumpus_w_up        "Rumpus (w) Up" (gBlinds) ["power"] {channel="mox:1_gang_onoff:rumpus_w_up:state"}
-Switch power_rumpus_w_down      "Rumpus (w) Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:rumpus_w_down:state"}
-Switch power_rumpus_s_up        "Rumpus (s) Up" (gBlinds) ["power"] {channel="mox:1_gang_onoff:rumpus_s_up:state"}
-Switch power_rumpus_s_down       "Rumpus (s) Down" (gBlinds) ["power"] {channel="mox:1_gang_onoff:rumpus_s_down"}
+Switch power_beck_door_up       "Back Door Up" (gBlinds) ["power"] { channel="mox:1_gang_onoff:beck_door_up:state"}
+Switch power_back_door_down     "Back Door Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:back_door_down:state"}
+Switch power_north_window_up    "North Windows Up" (gBlinds) ["power"] { channel="mox:1_gang_onoff:north_window_down:state"}
+Switch power_north_window_down  "North Windows Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:north_window_down:state"}
+Switch power_meals_up           "Meals Up" (gBlinds) ["power"] { channel="mox:1_gang_onoff:meals_up:state"}
+Switch power_meals_down         "Meals Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:meals_down:state"}
+Switch power_rumpus_n_up         "Rumpus (n) UP" (gBlinds) ["power} { channel="mox:1_gang_onoff:rumpus_n_down:state"}
+Switch power_rumpus_n_down      "Rumpus (n) Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:rumpus_n_down:state"}
+Switch power_rumpus_w_up        "Rumpus (w) Up" (gBlinds) ["power"] { channel="mox:1_gang_onoff:rumpus_w_up:state"}
+Switch power_rumpus_w_down      "Rumpus (w) Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:rumpus_w_down:state"}
+Switch power_rumpus_s_up        "Rumpus (s) Up" (gBlinds) ["power"] { channel="mox:1_gang_onoff:rumpus_s_up:state"}
+Switch power_rumpus_s_down       "Rumpus (s) Down" (gBlinds) ["power"] { channel="mox:1_gang_onoff:rumpus_s_down"}
 
 //Pool House WC 2
-Switch light_bollards2 "Bollards" (gPoolwc2) ["light"] {channel="mox:1_gang_onoff:bollards2:state"}
-Switch light_steplights3 "Steplights" (gPoolwc2) ["light"] {channel="mox:1_gang_onoff:steplights:state"}
-Switch light_spotlightsp3 "Spotlights" (gPoolwc2) ["light"] {channel="mox:1_gang_onoff:steplights3:state"}
-Dimmer light_bacj_deck "Back Deck" (gPoolwc2) ["light"] {channel="mox:1_gang_onoff:spotlights3:state"}
-Switch power_rear_floods "Rear Floods (gPoolwc2) ["power"] {channel="mox:1_gang_onoff:rear_floods:state"}
-Switch power_lounge_floods "Lounge Floods" (gPoolwc2) ["power"] {channel="mox:1_gang_onoff:lounge_floods:state"}
+Switch light_bollards2 "Bollards" (gPoolwc2) ["light"] { channel="mox:1_gang_onoff:bollards2:state"}
+Switch light_step3 "Step" (gPoolwc2) ["light"] { channel="mox:1_gang_onoff:step:state"}
+Switch light_spotp3 "Spot" (gPoolwc2) ["light"] { channel="mox:1_gang_onoff:step3:state"}
+Dimmer light_bacj_deck "Back Deck" (gPoolwc2) ["light"] { channel="mox:1_gang_onoff:spot3:state"}
+Switch power_rear_floods "Rear Floods (gPoolwc2) ["power"] { channel="mox:1_gang_onoff:rear_floods:state"}
+Switch power_lounge_floods "Lounge Floods" (gPoolwc2) ["power"] { channel="mox:1_gang_onoff:lounge_floods:state"}
 
 //Afreco BBQ 2
-Switch power_hydronic "Hydronic" (gAlfresco2) ["power"] {channel="mox:1_gang_onoff:hydronic:state"}
-Switch power_upstairs "Upstairs" (gAlfresco2) ["power"] {channel="mox:1_gang_onoff:upstairs:state"}
+Switch power_hydronic "Hydronic" (gAlfresco2) ["power"] { channel="mox:1_gang_onoff:hydronic:state"}
+Switch power_upstairs "Upstairs" (gAlfresco2) ["power"] { channel="mox:1_gang_onoff:upstairs:state" }
 
 
 
