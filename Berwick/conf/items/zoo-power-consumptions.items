@@ -36,39 +36,39 @@ Group:Number:SUM 	gConsumPoolwc2	"Pool House WC 2"		(gConsumption)
 Group:Number:SUM 	gConsumAlfresco2	"Alfresco/BBQ 2"		(gConsumption)	
 
 //Master Bedroom
-Numberconsum_main_lights     "Main Light" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_dimmer:main_lights:activeEnergy"   }
+Numberconsum_main     "Main Light" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_dimmer:main:activeEnergy"   }
 Number consum_ceiling_fan    "Ceiling Fan" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_onoff:ceiling_fan:activeEnergy" }
 Number consum_wardrobe       "Wardrobe" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_onoff:wardrobe:activeEnergy"
-Numberlight_deck            "Deck" (gConsumMasterb)  [ "consumption" ] { channel="mox:1_gang_dimmer:deck:activeEnergy" }
-Numberconsum_hallway        "Hallway" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_dimmer:hallway:activeEnergy" }
+Number Consum_deck            "Deck" (gConsumMasterb)  [ "consumption" ] { channel="mox:1_gang_dimmer:deck:activeEnergy" }
+Number consum_hallway        "Hallway" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_dimmer:hallway:activeEnergy" }
 Number consum_drapes_open    "Drapes Open"(gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_onoff:drapes_open:activeEnergy" }
 Number consum_drapes_close   "Drapes Close" (gConsumMasterb) [ "consumption" ] { channel="mox:1_gang_onoff:drapes_close:activeEnergy" }
 
 
 //Master Ensuite
 Number consum_toilet_fan     "Toilet Fan" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_onoff:toilet_fan:activeEnergy"}
-Number consum_toilet_ligth   "Toilet Light" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_onoff:toilet_light:activeEnergy"}
+Number consum_toilet   "Toilet Light" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_onoff:toilet:activeEnergy"}
 Number consum_en_suite_fan   "En suite Fan" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_onoff:en_suite_fan:activeEnergy"}
 Number consum_en_suite       "En Suite" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_dimmer:en_suite:activeEnergy"}
 Number consum_vanity         "Vanity" (gConsumMastere) [ "consumption" ] {channel="mox:1_gang_dimmer:vanity:activeEnergy"}
-Number consum_bath_ligth     "Bath Light" (gConsumMastere) [ "consumption" ] {channel:"mox:1_gang_dimmer:bath_light:activeEnergy"}
+Number consum_bath     "Bath Light" (gConsumMastere) [ "consumption" ] {channel:"mox:1_gang_dimmer:bath:activeEnergy"}
 
 
 //Entry Internal
 Numberconsum_entry_uplight      "Entry Uplight" (gConsumEntryi) [ "consumption" ] {channel="mox:1_gang_onoff:entry_uplight:activeEnergy"}
-Number consum_steplights         "Step Lights: (gConsumEntryi) [ "consumption" ] {channel="mox:1_gang_onoff:steplights:activeEnergy"}
+Number consum_step         "Step Lights: (gConsumEntryi) [ "consumption" ] {channel="mox:1_gang_onoff:step:activeEnergy"}
 Numberconsum_stairwell_ceiling  "Stairwell Ceiling" (gConsumEntryi) [ "consumption" ] {channel="mox:1_gang_onoff:stairwell_ceiling:activeEnergy"}
 Numberconsum_pendant             "Pendant" (gConsumEntryi) [ "consumption" ] {channel="mox:1_gang_dimmer:pendant:activeEnergy"}
 
 
 //Study
 Number consum_ceiling_fan2       "Ceiling fan" (gConsumStudy) [ "consumption" ] {channel="mox:1_gang_onoff:ceiling_fan2:activeEnergy"}
-Number consum_downlights         "Downlights" (gConsumStudy) [ "consumption" ] {channel="mox:1_gang_dimmer:downlights"}
+Number consum_down         "Down" (gConsumStudy) [ "consumption" ] {channel="mox:1_gang_dimmer:down"}
 
 
 //Lounge
 Number consum_pendant2           "Pendant" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_dimmer:pendant2:activeEnergy"}
-Number consum_downlights2        "Downlights" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_dimmer:downlights2:activeEnergy"}
+Number consum_down2        "Down" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_dimmer:down2:activeEnergy"}
 Number consum_blinds_open        "Blinds Open" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_onoff:blinds_open:activeEnergy"}
 Number consum_blinds_close       "Blinds Close" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_onoff:blinds_close:activeEnergy"}
 Number consum_recess             "Recess" (gConsumLounge) [ "consumption" ] {channel="mox:1_gang_onoff:recess:activeEnergy"}
@@ -85,7 +85,7 @@ Number consum_gym_tv             "Gym TV" (gConsumGym) [ "consumption" ] {channe
 Number consum_laundry            "Laundry" (gConsumLaundry) [ "consumption" ] {channel="mox:1_gang_onoff:laundry:activeEnergy"}
 Number consum_laundry_hall       "Laundry Wall" (gConsumLaundry)  [ "consumption" ] {channel="mox:1_gang_onoff:laundry_hall:activeEnergy"}
 Number consum_l_exit             "L. Exit"  (gConsumLaundry) [ "consumption" ]{channel="mox:1_gang_onoff:l_exit:activeEnergy"}
-Number consum_toilet_ligth2      "Toilet Light" (gConsumLaundry)  [ "consumption" ] {channel="mox:1_gang_onoff:toilet_light2:activeEnergy"}
+Number consum_toilet2      "Toilet Light" (gConsumLaundry)  [ "consumption" ] {channel="mox:1_gang_onoff:toilet2:activeEnergy"}
 Number consum_powder_fan         "Powder Fan" (gConsumLaundry)  [ "consumption" ] {channel="mox:1_gang_onoff:powder_fan:activeEnergy"}
 Number consum_vanity2            "Vanity" (gConsumLaundry) [ "consumption" ] {channel="mox:1_gang_dimmer:vanity:activeEnergy"}
 
@@ -103,7 +103,7 @@ Number consum_pantry_fridge      "Pantry Bridge" (gConsumKitchen) [ "consumption
 //Dinning Area
 Number consum_wall               "Wall" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:wall:activeEnergy"}
 Number consum_pendant4          "Pendant" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:pendant4:activeEnergy"}
-Number consum_downlights3        "Downlights" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:downlights3:activeEnergy"}
+Number consum_down3        "Down" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:down3:activeEnergy"}
 Number consum_family_x6          "Family x6" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:family_x6:activeEnergy"}
 Number consum_family_x2          "Family x2" (gConsumDining) [ "consumption" ] {channel="mox:1_gang_dimmer:family_x2:activeEnergy"}
 
@@ -114,8 +114,8 @@ Number consum_wall_door          "Wall Door" (gConsumEntrye) [ "consumption" ] {
 Number consum_drive_floods       "Drive Floods" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:drive_floods:activeEnergy"}
 Number consum_garden_1           "Garden 1" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:garden_1:activeEnergy"}
 Number consum_garden_2           "Garden 2" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:garden_2:activeEnergy"}
-Number consum_spotlightsp2       "Spotlights" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:spotlightsp2:activeEnergy"}
-Number consum_steplights2        "Steplights" (gConsumEntrye) [ "consumption" ]  {channel="mox:1_gang_onoff:steplights2:activeEnergy"}
+Number consum_spotp2       "Spot" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:spotp2:activeEnergy"}
+Number consum_step2        "Step" (gConsumEntrye) [ "consumption" ]  {channel="mox:1_gang_onoff:step2:activeEnergy"}
 Number consum_dining_spots       "Dininng Spots" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:dining_spots:activeEnergy"}
 Number consum_bollards           "Bollards" (gConsumEntrye) [ "consumption" ] {channel="mox:1_gang_onoff:bollards:activeEnergy"}
 
@@ -123,19 +123,19 @@ Number consum_bollards           "Bollards" (gConsumEntrye) [ "consumption" ] {c
 //Pool House
 Number consum_ceiling_fan3       "Ceiling Fan" (gConsumPoolh) [ "consumption" ] {channel="mox:1_gang_onoff:ceiling_fan3:activeEnergy"}
 Number consum_pool_flood         "Pool Flood" (gConsumPoolh) [ "consumption" ] {channel="mox:1_gang_onoff:pool_flood:activeEnergy"}
-Number consum_downlights4        "Downlights" (gConsumPoolh) [ "consumption" ] {channel="mox:1_gang_onoff:downlights4:activeEnergy"}
+Number consum_down4        "Down" (gConsumPoolh) [ "consumption" ] {channel="mox:1_gang_onoff:down4:activeEnergy"}
 Number consum_pool_tv            "Pool TV"  (gConsumPoolh)[ "consumption" ] {channel="mox:1_gang_onoff:pool_tv:activeEnergy"}
 Number consum_pool_fridge        "Pool Fridge" (gConsumPoolh)  [ "consumption" ] {channel="mox:1_gang_onoff:pool_fridge:activeEnergy"}
 
 
 //Pool House WC
-Number consum_downlights5        "Downlights" (gConsumPoolwc) [ "consumption" ] {channel="mox:1_gang_onoff:downlights5:activeEnergy"}
+Number consum_down5        "Down" (gConsumPoolwc) [ "consumption" ] {channel="mox:1_gang_onoff:down5:activeEnergy"}
 Number consum_vanity3            "Vanity" (gConsumPoolwc) [ "consumption" ] {channel="mox:1_gang_onoff:vanity3:activeEnergy"}
 Number consum_exhoust_fan        "Exhaust Fan" (gConsumPoolwc) [ "consumption" ] {channell="mox:1_gang_onoff:exhaust_fan:activeEnergy"}
 
 
 //Rumpus Room
-Number consum_downlights6        "Downlights" (gConsumRumpus) [ "consumption" ] {channel="mox:1_gang_dimmer:downlights6:activeEnergy"}
+Number consum_down6        "Down" (gConsumRumpus) [ "consumption" ] {channel="mox:1_gang_dimmer:down6:activeEnergy"}
 Number consum_bar                "Bar" (gConsumRumpus) [ "consumption" ] {channel="mox:1_gang_dimmer:bar:activeEnergy"}
 Number consum_rumpus_tv          "TV" (gConsumRumpus) [ "consumption" ] {channel="mox:1_gang_onoff:rumpus_tv:activeEnergy"}
 Number consum_bar_fridge         "Bar Fridge" (gConsumRumpus)  [ "consumption" ] {channel="mox:1_gang_onoff:bar_fridge:activeEnergy"}
@@ -173,9 +173,9 @@ Number consum_rumpus_s_down       "Rumpus (s) Down" (gConsumBlinds) [ "consumpti
 
 //Pool House WC 2
 Number consum_bollards2 "Bollards" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:bollards2:activeEnergy"}
-Number consum_steplights3 "Steplights" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:steplights:activeEnergy"}
-Number consum_spotlightsp3 "Spotlights" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:steplights3:activeEnergy"}
-Number consum_bacj_deck "back deck" (gconsumpoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:spotlights3:activeenergy"}
+Number consum_step3 "Step" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:step:activeEnergy"}
+Number consum_spotp3 "Spot" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:step3:activeEnergy"}
+Number consum_bacj_deck "back deck" (gconsumpoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:spot3:activeenergy"}
 Number consum_rear_floods "Rear Floods (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:rear_floods:activeEnergy"}
 Number consum_lounge_floods "Lounge Floods" (gConsumPoolwc2) [ "consumption" ] {channel="mox:1_gang_onoff:lounge_floods:activeEnergy"}
 
