@@ -47,11 +47,11 @@ Switch power_drapes_close   "Drapes Close" (gMasterb) ["power"] { channel="mox:1
 
 //Master Ensuite
 Switch power_toilet_fan     "Toilet Fan" (gMastere) ["power"] { channel="mox:1_gang_onoff:toilet_fan:state"  }
-Switch light_toilet   "Toilet Light" (gMastere) ["light"] { channel="mox:1_gang_onoff:toilet_light:state"  }
+Switch light_toilet   "Toilet Light" (gMastere) ["light"] { channel="mox:1_gang_onoff:toilet:state"  }
 Switch power_en_suite_fan   "En suite Fan" (gMastere) ["power"] { channel="mox:1_gang_onoff:en_suite_fan:state"  }
 Dimmer light_en_suite       "En Suite" (gMastere) ["light"] { channel="mox:1_gang_dimmer:en_suite:state"  }
 Dimmer light_vanity         "Vanity" (gMastere) ["light"] { channel="mox:1_gang_dimmer:vanity:state"  }
-Dimmer light_bath_light     "Bath Light" (gMastere) ["light"] { channel:"mox:1_gang_dimmer:bath_light:state"  }
+Dimmer light_bath     "Bath Light" (gMastere) ["light"] { channel:"mox:1_gang_dimmer:bath:state"  }
 
 
 //Entry Internal
@@ -85,7 +85,7 @@ Switch power_gym_tv             "Gym TV" (gGym) ["power"] { channel="mox:1_gang_
 Switch power_laundry            "Laundry" (gLaundry) ["power"] { channel="mox:1_gang_onoff:laundry:state"  }
 Switch power_laundry_hall       "Laundry Wall" (gLaundry)  ["power"] { channel="mox:1_gang_onoff:laundry_hall:state"  }
 Switch power_l_exit             "L. Exit" ["power"] (gLaundry) { channel="mox:1_gang_onoff:l_exit:state"  }
-Switch light_toilet_light2      "Toilet Light" (gLaundry)  ["light"] { channel="mox:1_gang_onoff:toilet_light2:state"  }
+Switch light_toilet2      "Toilet Light" (gLaundry)  ["light"] { channel="mox:1_gang_onoff:toilet2:state"  }
 Switch power_powder_fan         "Powder Fan" (gLaundry)  ["power"] { channel="mox:1_gang_onoff:powder_fan:state"  }
 Dimmer light_vanity2            "Vanity" (gLaundry) ["light} { channel="mox:1_gang_dimmer:vanity:state"  }
 
