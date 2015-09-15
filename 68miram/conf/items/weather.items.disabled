@@ -1,3 +1,0 @@
-Group gWeather
-
-//Number temperature_current (gWeather) {channel="yahooweather:weather:melbourne:temperature"}
