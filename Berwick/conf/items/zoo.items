@@ -102,7 +102,7 @@ Switch power_pantry_fridge      "Pantry Bridge" (gKitchen) ["power"] { channel="
 
 // Dinning Area
 Dimmer light_wall               "Wall" (gDining) ["light"] { channel="mox:1_gang_dimmer:wall:state"  }
-Dimmerh light_pendant4          "Pendant" (gDining) ["light"] { channel="mox:1_gang_dimmer:pendant4:state"  }
+Dimmer light_pendant4          "Pendant" (gDining) ["light"] { channel="mox:1_gang_dimmer:pendant4:state"  }
 Dimmer light_down3        "Down" (gDining) ["light"] { channel="mox:1_gang_dimmer:down3:state"  }
 Dimmer light_family_x6          "Family x6" (gDining) ["light"] { channel="mox:1_gang_dimmer:family_x6:state"  }
 Dimmer light_family_x2          "Family x2" (gDining) ["light"] { channel="mox:1_gang_dimmer:family_x2:state"  }
