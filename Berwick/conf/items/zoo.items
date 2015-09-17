@@ -58,7 +58,7 @@ Dimmer light_vanity         "Vanity"                    (gMastere) [ "light" ] {
 Dimmer light_bath           "Bath Light"                (gMastere) [ "light" ] { channel:"mox:1_gang_dimmer:bath:state"  }
 
 
-//Entry Internal
+// Entry Internal
 
 Switch light_entry_uplight      "Entry Uplight"         (gEntryi) [ "light" ] { channel="mox:1_gang_onoff:entry_uplight:state"  }
 Switch light_step               "Step Lights"           (gEntryi) [ "light" ] { channel="mox:1_gang_onoff:step:state"  }
@@ -66,13 +66,13 @@ Switch light_stairwell_ceiling  "Stairwell Ceiling"     (gEntryi) [ "light" ] { 
 Dimmer light_pendant             "Pendant"              (gEntryi) [ "light" ] { channel="mox:1_gang_dimmer:pendant:state"  }
 
 
-//Study
+// Study
 
 Switch power_ceiling_fan2       "Ceiling fan"           (gStudy) [ "power" ] { channel="mox:1_gang_onoff:ceiling_fan2:state"  }
 Dimmer light_down               "Down"                  (gStudy) [ "light" ] { channel="mox:1_gang_dimmer:down:state"  }
 
 
-//Lounge
+// Lounge
 
 Dimmer light_pendant2           "Pendant"               (gLounge) [ "light" ] { channel="mox:1_gang_dimmer:pendant2:state"  }
 Dimmer light_down2              "Down"                  (gLounge) [ "light" ] { channel="mox:1_gang_dimmer:down2:state"  }
@@ -81,7 +81,7 @@ Switch power_blinds_close       "Blinds Close"          (gLounge) [ "power" ] { 
 Switch light_recess             "Recess"                (gLounge) [ "light" ] { channel="mox:1_gang_onoff:recess:state"  }
 
 
-//Gym
+// Gym
 
 Dimmer light_stairwell          "Stairwell"             (gGym) [ "light" ] { channel="mox:1_gang_dimmer:stairwell:state"  }
 Dimmer light_gym                "Gym"                   (gGym) [ "light" ] { channel="mox:1_gang_dimmer:gym:state"  }
@@ -126,7 +126,7 @@ Switch power_wall_door          "Wall Door"             (gEntrye) [ "power" ] { 
 Switch power_drive_floods       "Drive Floods"          (gEntrye) [ "power" ] { channel="mox:1_gang_onoff:drive_floods:state"  }
 Switch power_garden_1           "Garden 1"              (gEntrye) [ "power" ] { channel="mox:1_gang_onoff:garden_1:state"  }
 Switch power_garden_2           "Garden 2"              (gEntrye) [ "power" ] { channel="mox:1_gang_onoff:garden_2:state"  }
-Switch light_spotp2             "Spot"                  (gEntrye) [ "light" ] { channel="mox:1_gang_onoff:spotp2:state"  }
+Switch light_spot2             "Spot"                  (gEntrye) [ "light" ] { channel="mox:1_gang_onoff:spot2:state"  }
 Switch light_step2              "Step"                  (gEntrye) [ "light" ] { channel="mox:1_gang_onoff:step2:state"  }
 Switch light_dining_spots       "Dininng Spots"         (gEntrye) [ "light" ] { channel="mox:1_gang_onoff:dining_spots:state"  }
 Switch light_bollards           "Bollards"              (gEntrye) [ "light" ] { channel="mox:1_gang_onoff:bollards:state"  }
@@ -176,7 +176,7 @@ Switch power_bbq_fridge         "BBQ Fridge"            (gAlfresco, gPowerDef) [
 
 // Living Blinds
 
-Switch power_beckdoorup       "Back Door Up"            (gBlinds) [ "power" ] { channel="mox:1_gang_onoff:beckdoorup:state" }
+Switch power_backdoorup       "Back Door Up"            (gBlinds) [ "power" ] { channel="mox:1_gang_onoff:backdoorup:state" }
 Switch power_backdoordown     "Back Door Down"          (gBlinds) [ "power" ] { channel="mox:1_gang_onoff:backdoordown:state" }
 Switch power_northwindowup    "North Windows Up"        (gBlinds) [ "power" ] { channel="mox:1_gang_onoff:northwindowdown:state" }
 Switch power_northwindowdown  "North Windows Down"      (gBlinds) [ "power" ] { channel="mox:1_gang_onoff:northwindowdown:state" }
@@ -193,7 +193,7 @@ Switch power_rumpussdown       "Rumpus s Down"          (gBlinds) [ "power" ] { 
 
 Switch light_bollards2          "Bollards"              (gPoolwc2) [ "light" ] { channel="mox:1_gang_onoff:bollards2:state" }
 Switch light_step3              "Step"                  (gPoolwc2) [ "light" ] { channel="mox:1_gang_onoff:step3:state" }
-Switch light_spotp3             "Spot"                  (gPoolwc2) [ "light" ] { channel="mox:1_gang_onoff:spotp3:state" }
+Switch light_spot3             "Spot"                  (gPoolwc2) [ "light" ] { channel="mox:1_gang_onoff:spot3:state" }
 Dimmer light_back_deck          "Back Deck"             (gPoolwc2) [ "light" ] { channel="mox:1_gang_onoff:back_deck:state" }
 Switch power_rear_floods        "Rear Floods"           (gPoolwc2) [ "power" ] { channel="mox:1_gang_onoff:rear_floods:state" }
 Switch power_lounge_floods      "Lounge Floods"         (gPoolwc2) [ "power" ] { channel="mox:1_gang_onoff:lounge_floods:state" }
