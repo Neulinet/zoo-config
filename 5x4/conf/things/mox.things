@@ -1,15 +1,15 @@
 mox:gateway:221 [ udpHost="192.168.0.253"]
 
 
-mox:1_gang_onoff:stairs	[ oid=349 ]
+mox:1_gang_onoff:stairs	        [ oid=349 ]
 mox:1_gang_onoff:kitchen_track	[ oid=351 ]
 mox:1_gang_onoff:kitchen_garden	[ oid=203 ]
 mox:1_gang_onoff:kitchen_bench	[ oid=357 ]
 mox:1_gang_onoff:garage_strip	[ oid=370 ]
 
 mox:1_gang_onoff:office_cupboard	[ oid=372 ]
-mox:1_gang_onoff:exterior	[ oid=373 ]
-mox:1_gang_onoff:laundry	[ oid=374 ]
+mox:1_gang_onoff:exterior       	[ oid=373 ]
+mox:1_gang_onoff:laundry        	[ oid=374 ]
 mox:1_gang_onoff:garage_track	[ oid=375 ]
 mox:1_gang_onoff:stairs_roof	[ oid=201 ]
 mox:1_gang_onoff:bedroom_plant	[ oid=202 ]
