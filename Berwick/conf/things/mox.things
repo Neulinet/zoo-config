@@ -34,7 +34,7 @@ mox:1_gang_onoff:lounge_floods	[ oid=123 ]
 
 
 
-mox:1_gang_dimmer:main_	        [ oid=201 ]
+mox:1_gang_dimmer:main	        [ oid=201 ]
 mox:1_gang_dimmer:deck	        [ oid=204 ]
 mox:1_gang_dimmer:hallway	    [ oid=205 ]
 mox:1_gang_dimmer:en_suite	    [ oid=202 ]
