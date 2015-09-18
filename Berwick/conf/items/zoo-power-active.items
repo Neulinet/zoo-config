@@ -7,20 +7,20 @@
 Group:Number:SUM    gPower		"Consumption"       (gPowerZooPower) [ "home-group" ]
 Group:Number:SUM 	gPowerMasterb "Master Bedroom"		    (gPower)	
 Group:Number:SUM 	gPowerMastere	"Master En Suite"		(gPower)	
-Group:Number:SUM 	gPowerEntryi	"Entry Internal"		    (gPower)	
+Group:Number:SUM 	gPowerEntry	"Entry Internal"		    (gPower)	
 Group:Number:SUM 	gPowerStudy	    "Study"		                (gPower)	
 Group:Number:SUM 	gPowerLounge	"Lounge	"		            (gPower)	
 Group:Number:SUM 	gPowerGym 	    "Gym"		                (gPower)	
 Group:Number:SUM 	gCosnumLaundry	"Laundry/Powder Room"	(gPower)	
 Group:Number:SUM 	gPowerKitchen	"Kitchen"		        (gPower)	
 Group:Number:SUM 	gPowerDining	"Dining Area"		        (gPower)	
-Group:Number:SUM 	gPowerEntrye	"Entry External"		    (gPower)	
-Group:Number:SUM 	gPowerRumpus	"Rumpus/Bar"		        (gPower)	
-Group:Number:SUM 	gPowerGarage	"Garage"		            (gPower)	
-Group:Number:SUM 	gPowerPoolh	    "Pool House"		        (gPower)	
-Group:Number:SUM 	gPowerPoolwc	"Pool House WC"		        (gPower)	
-Group:Number:SUM 	gPowerAlfresco	"Alfresco/BBQ"	   	    (gPower)	
-Group:Number:SUM 	gPowerBlinds	"Living Blinds"		        (gPower)	
+Group:Number:SUM 	gPowerEntry	"Entry External"		    (gPower)	
+Group:Number:SUM 	gPowerRump	"Rumpus/Bar"		        (gPower)	
+Group:Number:SUM 	gPowerGara	"Garage"		            (gPower)	
+Group:Number:SUM 	gPowerPool	    "Pool House"		        (gPower)	
+Group:Number:SUM 	gPowerPotoil	"Pool House WC"		        (gPower)	
+Group:Number:SUM 	gPowerAlfres	"Alfresco/BBQ"	   	    (gPower)	
+Group:Number:SUM 	gPowerBlind	"Living Blinds"		        (gPower)	
 Group:Number:SUM 	gPowerPoolwc2	"Pool House WC 2"		(gPower)	
 Group:Number:SUM 	gPowerAlfresco2	"Alfresco/BBQ 2"		(gPower)	
 
@@ -62,7 +62,7 @@ Number Power_down         "Down"                    (gPowerStudy) [ "power" ] {c
 // Lounge
 
 Number Power_pendant2           "Pendant"           (gPowerLounge) [ "power" ] {channel="mox:1_gang_dimmer:pendant2:activePower"}
-Number Power_down2              "Down"              (gPowerLounge) [ "power" ] {channel="mox:1_gang_dimmer:down2:activePower"}
+Number Power_down_lounge              "Down"              (gPowerLounge) [ "power" ] {channel="mox:1_gang_dimmer:down_lounge:activePower"}
 Number Power_blinds_open        "Blinds Open"       (gPowerLounge) [ "power" ] {channel="mox:1_gang_onoff:blinds_open:activePower"}
 Number Power_blinds_close       "Blinds Close"      (gPowerLounge) [ "power" ] {channel="mox:1_gang_onoff:blinds_close:activePower"}
 Number Power_recess             "Recess"            (gPowerLounge) [ "power" ] {channel="mox:1_gang_onoff:recess:activePower"}
@@ -108,73 +108,73 @@ Number Power_family_x2          "Family x2"     (gPowerDining) [ "power" ] {chan
 
 // Entry External
 
-Number Power_wall_garage        "Wall GaragE"   (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:wall_garagE:activePower"}
-Number Power_wall_door          "Wall Door"     (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff::wall_door:activePower"}
-Number Power_drive_floods       "Drive Floods"  (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:drive_floods:activePower"}
-Number Power_garden_1           "Garden 1"      (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:garden_1:activePower"}
-Number Power_garden_2           "Garden 2"      (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:garden_2:activePower"}
-Number Power_spot2             "Spot"          (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:spot2:activePower"}
-Number Power_step2               "Step"         (gPowerEntrye) [ "power" ]  {channel="mox:1_gang_onoff:step2:activePower"}
-Number Power_dining_spots       "Dininng Spots" (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:dining_spots:activePower"}
-Number Power_bollards           "Bollards"      (gPowerEntrye) [ "power" ] {channel="mox:1_gang_onoff:bollards:activePower"}
+Number Power_wall_garage        "Wall GaragE"   (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:wall_garagE:activePower"}
+Number Power_wall_door          "Wall Door"     (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff::wall_door:activePower"}
+Number Power_drive_floods       "Drive Floods"  (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:drive_floods:activePower"}
+Number Power_garden_1           "Garden 1"      (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:garden_1:activePower"}
+Number Power_garden_2           "Garden 2"      (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:garden_2:activePower"}
+Number Power_spot2             "Spot"          (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:spot2:activePower"}
+Number Power_step2               "Step"         (gPowerEntry) [ "power" ]  {channel="mox:1_gang_onoff:step2:activePower"}
+Number Power_dining_spots       "Dininng Spots" (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:dining_spots:activePower"}
+Number Power_bollards           "Bollards"      (gPowerEntry) [ "power" ] {channel="mox:1_gang_onoff:bollards:activePower"}
 
 
 // Pool House
 
-Number Power_ceiling_fan3       "Ceiling Fan"   (gPowerPoolh) [ "power" ] {channel="mox:1_gang_onoff:ceiling_fan3:activePower"}
-Number Power_pool_flood         "Pool Flood"    (gPowerPoolh) [ "power" ] {channel="mox:1_gang_onoff:pool_flood:activePower"}
-Number Power_down4              "Down"          (gPowerPoolh) [ "power" ] {channel="mox:1_gang_onoff:down4:activePower"}
-Number Power_pool_tv            "Pool TV"       (gPowerPoolh) [ "power" ] {channel="mox:1_gang_onoff:pool_tv:activePower"}
-Number Power_pool_fridge        "Pool Fridge"   (gPowerPoolh) [ "power" ] {channel="mox:1_gang_onoff:pool_fridge:activePower"}
+Number Power_ceiling_fan3       "Ceiling Fan"   (gPowerPool) [ "power" ] {channel="mox:1_gang_onoff:ceiling_fan3:activePower"}
+Number Power_pool_flood         "Pool Flood"    (gPowerPool) [ "power" ] {channel="mox:1_gang_onoff:pool_flood:activePower"}
+Number Power_down4              "Down"          (gPowerPool) [ "power" ] {channel="mox:1_gang_onoff:down4:activePower"}
+Number Power_pool_tv            "Pool TV"       (gPowerPool) [ "power" ] {channel="mox:1_gang_onoff:pool_tv:activePower"}
+Number Power_pool_fridge        "Pool Fridge"   (gPowerPool) [ "power" ] {channel="mox:1_gang_onoff:pool_fridge:activePower"}
 
 
 // Pool House WC
 
-Number Power_down5        "Down"                (gPowerPoolwc) [ "power" ] {channel="mox:1_gang_onoff:down5:activePower"}
-Number Power_vanity3            "Vanity"        (gPowerPoolwc) [ "power" ] {channel="mox:1_gang_onoff:vanity3:activePower"}
-Number Power_exhoust_fan        "Exhaust Fan"   (gPowerPoolwc) [ "power" ] {channel="mox:1_gang_onoff:exhaust_fan:activePower"}
+Number Power_down5        "Down"                (gPowerPotoil) [ "power" ] {channel="mox:1_gang_onoff:down5:activePower"}
+Number Power_vanity3            "Vanity"        (gPowerPotoil) [ "power" ] {channel="mox:1_gang_onoff:vanity3:activePower"}
+Number Power_exhoust_fan        "Exhaust Fan"   (gPowerPotoil) [ "power" ] {channel="mox:1_gang_onoff:exhaust_fan:activePower"}
 
 
 // Rumpus Room
 
-Number Power_down6        "Down"                (gPowerRumpus) [ "power" ] {channel="mox:1_gang_dimmer:down6:activePower"}
-Number Power_bar                "Bar"           (gPowerRumpus) [ "power" ] {channel="mox:1_gang_dimmer:bar:activePower"}
-Number Power_rumpus_tv          "TV"            (gPowerRumpus) [ "power" ] {channel="mox:1_gang_onoff:rumpus_tv:activePower"}
-Number Power_bar_fridge         "Bar Fridge"    (gPowerRumpus)  [ "power" ] {channel="mox:1_gang_onoff:bar_fridge:activePower"}
+Number Power_down6        "Down"                (gPowerRump) [ "power" ] {channel="mox:1_gang_dimmer:down6:activePower"}
+Number Power_bar                "Bar"           (gPowerRump) [ "power" ] {channel="mox:1_gang_dimmer:bar:activePower"}
+Number Power_rumpus_tv          "TV"            (gPowerRump) [ "power" ] {channel="mox:1_gang_onoff:rumpus_tv:activePower"}
+Number Power_bar_fridge         "Bar Fridge"    (gPowerRump)  [ "power" ] {channel="mox:1_gang_onoff:bar_fridge:activePower"}
 
 // Garage
 
-Number Power_upper_floods       "Upper Floods" (gPowerGarage) [ "power" ] {channel="mox:1_gang_onoff:upper_floods:activePower"}
-Number Power_lower_floods       "Lower Floods" (gPowerGarage) [ "power" ] {channel="mox:1_gang_onoff:lower_floods:activePower"}
+Number Power_upper_floods       "Upper Floods" (gPowerGara) [ "power" ] {channel="mox:1_gang_onoff:upper_floods:activePower"}
+Number Power_lower_floods       "Lower Floods" (gPowerGara) [ "power" ] {channel="mox:1_gang_onoff:lower_floods:activePower"}
 
 
 // Alfresco
 
-Number Power_alfresco_fan       "Alfresco Fan"  (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_onoff:alfresco_fan:activePower"}
-Number Power_alfresco_dl        "Alfresco DL"   (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_dimmer:alfresco_dl"activePower"}
-Number Power_bbq_dl             "BBQ DL"        (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_dimmer:bbq_dl:activePower"}
-Number Power_gym_stair           "Gym Stair"    (gPowerAlfresco) [ "power" ]   {channel="mox:1_gang_dimmer:gym_stair:activePower"}
-Number Power_bug_zapper         "Bug Zapper"    (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_onoff:bug_zapper:activePower"}
-Number Power_heaters            "Heaters"       (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_onoff:heaters:activePower"}
-Number Power_bbq_fridge         "BBQ Fridge"    (gPowerAlfresco) [ "power" ] {channel="mox:1_gang_onoff:bbq_fridge:activePower"}
+Number Power_alfresco_fan       "Alfresco Fan"  (gPowerAlfres) [ "power" ] {channel="mox:1_gang_onoff:alfresco_fan:activePower"}
+Number Power_alfresco_dl        "Alfresco DL"   (gPowerAlfres) [ "power" ] {channel="mox:1_gang_dimmer:alfresco_dl"activePower"}
+Number Power_bbq_dl             "BBQ DL"        (gPowerAlfres) [ "power" ] {channel="mox:1_gang_dimmer:bbq_dl:activePower"}
+Number Power_gym_stair           "Gym Stair"    (gPowerAlfres) [ "power" ]   {channel="mox:1_gang_dimmer:gym_stair:activePower"}
+Number Power_bug_zapper         "Bug Zapper"    (gPowerAlfres) [ "power" ] {channel="mox:1_gang_onoff:bug_zapper:activePower"}
+Number Power_heaters            "Heaters"       (gPowerAlfres) [ "power" ] {channel="mox:1_gang_onoff:heaters:activePower"}
+Number Power_bbq_fridge         "BBQ Fridge"    (gPowerAlfres) [ "power" ] {channel="mox:1_gang_onoff:bbq_fridge:activePower"}
 
 
 
 
 // Living Blinds
 
-Number Power_backdoorup       "Back Door Up"      (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:backdoorup:activePower"}
-Number Power_backdoordown     "Back Door Down"    (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:backdoordown:activePower"}
-Number Power_northwindowup    "North Windows Up"  (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:northwindowdown:activePower"}
-Number Power_northwindowdown  "North Windows Down" (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:northwindowdown:activePower"}
-Number Power_mealsup           "Meals Up"          (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:mealsup:activePower"}
-Number Power_mealsdown         "Meals Down"        (gPowerBlinds) [ "power" ] {channel="mox:1_gang_onoff:mealsdown:activePower"}
-Number Power_rumpusnup         "Rumpus n UP"    (gPowerBlinds)    ["power"]   {channel="mox:1_gang_onoff:rumpusndown:activePower"}
-Number Power_rumpusndown      "Rumpus n Down"   (gPowerBlinds)    [ "power" ] {channel="mox:1_gang_onoff:rumpusndown:activePower"}
-Number Power_rumpuswup        "Rumpus w Up"     (gPowerBlinds)    [ "power" ] {channel="mox:1_gang_onoff:rumpuswup:activePower"}
-Number Power_rumpuswdown      "Rumpus w Down"   (gPowerBlinds)    [ "power" ] {channel="mox:1_gang_onoff:rumpuswdown:activePower"}
-Number Power_rumpussup        "Rumpus s Up"     (gPowerBlinds)    [ "power" ] {channel="mox:1_gang_onoff:rumpussup:activePower"}
-Number Power_rumpussdown       "Rumpus s Down"    (gPowerBlinds) [ "power" ]  {channel="mox:1_gang_onoff:rumpussdown:activePower"}
+Number Power_backdoorup       "Back Door Up"      (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:backdoorup:activePower"}
+Number Power_backdoordown     "Back Door Down"    (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:backdoordown:activePower"}
+Number Power_northwindowup    "North Windows Up"  (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:northwindowdown:activePower"}
+Number Power_northwindowdown  "North Windows Down" (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:northwindowdown:activePower"}
+Number Power_mealsup           "Meals Up"          (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:mealsup:activePower"}
+Number Power_mealsdown         "Meals Down"        (gPowerBlind) [ "power" ] {channel="mox:1_gang_onoff:mealsdown:activePower"}
+Number Power_rumpusnup         "Rumpus n UP"    (gPowerBlind)    ["power"]   {channel="mox:1_gang_onoff:rumpusndown:activePower"}
+Number Power_rumpusndown      "Rumpus n Down"   (gPowerBlind)    [ "power" ] {channel="mox:1_gang_onoff:rumpusndown:activePower"}
+Number Power_rumpuswup        "Rumpus w Up"     (gPowerBlind)    [ "power" ] {channel="mox:1_gang_onoff:rumpuswup:activePower"}
+Number Power_rumpuswdown      "Rumpus w Down"   (gPowerBlind)    [ "power" ] {channel="mox:1_gang_onoff:rumpuswdown:activePower"}
+Number Power_rumpussup        "Rumpus s Up"     (gPowerBlind)    [ "power" ] {channel="mox:1_gang_onoff:rumpussup:activePower"}
+Number Power_rumpussdown       "Rumpus s Down"    (gPowerBlind) [ "power" ]  {channel="mox:1_gang_onoff:rumpussdown:activePower"}
 
 // Pool House WC 2
 
